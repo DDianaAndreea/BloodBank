@@ -65,6 +65,8 @@ $route['dashboard'] = 'admin';
 $route['logout'] = 'auth/logout';
 $route['login'] = 'auth/login';
 
+$route['stoc']='stoc/index';
+
 $route['inbox']='email/index';
 $route['compose']='email/compose';
 $route['view']='email/view';

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gazdă: 127.0.0.1
--- Timp de generare: mai 26, 2019 la 03:53 PM
+-- Timp de generare: mai 27, 2019 la 06:13 PM
 -- Versiune server: 10.1.39-MariaDB
 -- Versiune PHP: 7.3.5
 
@@ -35,16 +35,17 @@ CREATE TABLE `campanii` (
   `data` date NOT NULL,
   `locatie` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `imagine` varchar(255) CHARACTER SET utf8 COLLATE utf8_roman_ci NOT NULL,
-  `in_asteptare` int(255) NOT NULL
+  `in_asteptare` int(255) NOT NULL,
+  `participanti` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Eliminarea datelor din tabel `campanii`
 --
 
-INSERT INTO `campanii` (`ID`, `denumire`, `descriere`, `data`, `locatie`, `imagine`, `in_asteptare`) VALUES
-(6, 'Spitalul Judetean Slatina', 'doneaza impreuna cu alti oameni la centrul de transfuzii', '2019-08-20', 'Centrul BoodBank', 'drops.jpg', 1),
-(7, 'Drop of life', 'Impreuna putem ajuta.\r\nAlatura-te la o noua capanie de donare de sange ce riveste toti pacientii nostri.', '2019-08-20', 'Slatina', 'drops-of-life.jpg', 0);
+INSERT INTO `campanii` (`ID`, `denumire`, `descriere`, `data`, `locatie`, `imagine`, `in_asteptare`, `participanti`) VALUES
+(6, 'Spitalul Judetean Slatina', 'doneaza impreuna cu alti oameni la centrul de transfuzii', '2019-08-20', 'Centrul BoodBank', 'drops.jpg', 1, 0),
+(7, 'Drop of life', 'Impreuna putem ajuta.\r\nAlatura-te la o noua capanie de donare de sange ce riveste toti pacientii nostri.', '2019-08-20', 'Slatina', 'drops-of-life.jpg', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -68,7 +69,7 @@ CREATE TABLE `carnetul_donatorului` (
 --
 
 INSERT INTO `carnetul_donatorului` (`id`, `cnp`, `seria`, `numarul`, `localitate`, `judet`, `adresa`, `data_ultimei_donari`) VALUES
-(1, 2147483647, 'OT', 677288, 'Slatina', 'Olt', 'Aleea viorelelor, GA5A, et.8, ap.34', '2019-05-13 08:00:52'),
+(1, 2147483647, 'OT', 677288, 'Slatina', 'Olt', 'Aleea viorelelor, GA5A, et.8, ap.34', '2019-05-27 13:15:05'),
 (2, 2147483647, 'OT', 677288, 'Slatina', 'Olt', 'Aleea Rozelor, FB23, sc.C, et2, ap.5', '2019-05-09 12:59:23'),
 (6, 2147483647, 'OT', 677288, 'Slatina', 'Olt', 'Aleea viorelelor, GA5A, et.8, ap.34', '2019-05-09 14:38:24'),
 (7, 2147483647, 'OT', 552674, 'Slatina', 'Olt', 'Aleea Rozelor, FB23, sc.C, et2, ap.5', '2019-05-12 15:47:44');
@@ -253,8 +254,26 @@ CREATE TABLE `spitale` (
 --
 
 INSERT INTO `spitale` (`ID`, `denumire`, `email`, `telefon`, `cantitate`, `rh`, `grupa`, `cazul`, `data_cererii`, `activ`) VALUES
-(2, 'Spitalul Judetean Slatina', 'sjSlatina@yahoo.com', 740151940, 10, '-', '0', 'wtgsfxbcvhtrfuv', '2019-03-17 12:51:08', 1),
 (4, 'Spitalul Judetean Slatina', 'sjSlatina@yahoo.com', 770506027, 10, '+', 'AB', 'sputal', '2019-04-03 07:52:38', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structură tabel pentru tabel `stare_campanii`
+--
+
+CREATE TABLE `stare_campanii` (
+  `id` int(255) DEFAULT NULL,
+  `stare` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Eliminarea datelor din tabel `stare_campanii`
+--
+
+INSERT INTO `stare_campanii` (`id`, `stare`) VALUES
+(0, 'inactiv'),
+(1, 'activ');
 
 -- --------------------------------------------------------
 
@@ -295,13 +314,13 @@ CREATE TABLE `stoc` (
 --
 
 INSERT INTO `stoc` (`ID`, `grupa`, `rh`, `cantitate`) VALUES
-(1, '0', '+', 2),
-(2, '0', '-', 10),
-(3, 'A', '+', 0),
-(4, 'A', '-', 0),
-(5, 'B', '+', 0),
-(6, 'B', '-', 0),
-(7, 'AB', '+', 6),
+(1, '0', '+', 0),
+(2, '0', '-', 15),
+(3, 'A', '+', 15),
+(4, 'A', '-', 5),
+(5, 'B', '+', 37),
+(6, 'B', '-', 15),
+(7, 'AB', '+', 9),
 (8, 'AB', '-', 3);
 
 -- --------------------------------------------------------

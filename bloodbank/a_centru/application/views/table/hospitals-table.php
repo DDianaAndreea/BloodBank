@@ -55,7 +55,15 @@
                                         <td><?php echo $spital->cazul?></td>
                                         <td><?php echo $spital->telefon?></td>
                                         <td><?php echo $spital->email?></td>
-                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('spitale/delete_spital/'.$spital->ID )?>"></a></td>
+                                        <?php foreach($stocuri as $stoc):?>
+                                            <?php if($spital->grupa==$stoc->grupa && $spital->rh==$stoc->rh ):?>
+                                                    <?php if($spital->cantitate<=$stoc->cantitate):?>
+                                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('spitale/delete_spital/'.$spital->ID )?>"></a></td>
+                                                    <?php else:?>
+                                                        <td><p style="color:#8B0000">stocuri insuficiente<p></td>
+                                                    <?php endif?>
+                                            <?php endif?>
+                                        <?php endforeach?>
                                     </tr>
 
                                     <?php endforeach?>

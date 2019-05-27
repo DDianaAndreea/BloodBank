@@ -108,9 +108,9 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                        <li class="active"><a data-toggle="tab" href="#Home"><i class="fa fa-home"></i> Centru</a>
+                        <li ><a data-toggle="tab" href="#Home"><i class="fa fa-home"></i> Centru</a>
                         </li>
-                        <li><a data-toggle="tab" href="#email"><i class="fa fa-envelope"></i> Email</a>
+                        <li><a data-toggle="tab" href="#email"><i class="fa fa-envelope"></i> Mesaje</a>
                         </li>
                         <li><a data-toggle="tab" href="#cereri"><i class="fa fa-edit"></i> Cereri</a>
                         </li>
@@ -126,7 +126,7 @@
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="<?php echo base_url('dashboard')?>">Home</a>
                                 </li>
-                                <li><a href="<?php echo base_url('dashboard')?>">Stoc</a>
+                                <li><a href="<?php echo base_url('stoc')?>">Stoc</a>
                                 </li>
                             </ul>
                         </div>

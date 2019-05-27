@@ -82,7 +82,7 @@ class home_m extends CI_Model {
 		return $query->result();
 	}
 
-		public function get_nr_AB(){
+	public function get_nr_AB(){
 		$this->db->select_sum('cantitate');
 		$this->db->from('stoc');
 		$this->db->where('grupa', 'AB');
@@ -91,6 +91,50 @@ class home_m extends CI_Model {
 		$result = $query->result(); 
 		
 		return $query->result();
+	}
+
+	public function get_nr_p(){
+		$this->db->select('*');
+		$this->db->from('pacienti');
+		$this->db->where('activ', '0');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
+	}
+
+	public function get_nr_d(){
+		$this->db->select('*');
+		$this->db->from('donatori');
+		$this->db->where('activ', '1');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
+	}
+
+	public function get_nr_s(){
+		$this->db->select('*');
+		$this->db->from('spitale');
+		$this->db->where('activ', '0');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
+	}
+
+	public function get_nr_e(){
+		$this->db->select('*');
+		$this->db->from('campanii');
+		$this->db->where('in_asteptare', '0');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
 	}
 
 

@@ -206,7 +206,7 @@
                     <div class="email-statis-inner notika-shadow">
                         <div class="email-ctn-round">
                             <div class="email-rdn-hd">
-                                <h2>Socuri</h2>
+                                <h2>Stocuri</h2>
                             </div>
                           <!--   <div class="email-statis-wrap">
                                 <div class="email-round-nock">
@@ -257,7 +257,7 @@
             </div>
                 <br>
                 <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-7">
                     <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
                         <div class="rc-it-ltd">
                             <div class="recent-items-ctn">
@@ -270,21 +270,24 @@
                                     <thead>
                                         <tr>
                                             
-                                            <th>Nume eveniment</th>
-                                            <th >Participanti</th>
+                                            <th>Denumire</th>
+                                            <th>Data</th>
+                                            <th>Locatie</th>
+                                            <th>Participanti</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php  foreach($evenimente as$eveniment):?>
                                         <tr>
                                             
-                                            <td>Eveniment 1</td>
-                                            <td class="f-500 c-cyan">921</td>
+                                            <td><?php echo $eveniment->denumire?></td>
+                                            <td><?php echo $eveniment->data?></td>
+                                            <td><?php echo $eveniment->locatie?></td>
+                                            <td><?php echo $eveniment->participanti?></td>
+
+
                                         </tr>
-                                        <tr>
-                                            
-                                            <td>Eveniment 2</td>
-                                            <td class="f-500 c-cyan">240</td>
-                                        </tr>
+                                        <?php endforeach?>
                                         
                                     </tbody>
                                 </table>
@@ -293,6 +296,68 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-4">
+                    <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
+                        <div class="rc-it-ltd">
+                            <div class="recent-items-ctn">
+                                <div class="recent-items-title">
+                                    <h2>In asteptare </h2>
+                                </div>
+                            </div>
+                            <div class="recent-items-inn">
+                                <table class="table table-inner table-vmiddle">
+                                    <thead>
+                                        <tr>
+    
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                            <td>Pacienti</td>
+                                            <td><?php echo $pacienti_in_asteptare?></td>
+                                            
+
+
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>Donatori</td>
+                                            <td><?php echo $donatori_in_asteptare?></td>
+                                            
+
+
+                                        </tr>
+
+                                        <tr>
+                                            
+                                            <td>Spitale</td>
+                                            <td><?php echo $spitale_in_asteptare?></td>
+                                            
+
+
+                                        </tr>
+                                        <tr>
+                                            
+                                            <td>Evenimente</td>
+                                            <td><?php echo $evenimente_in_asteptare?></td>
+                                            
+
+
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
             </div> 
         </div>
     </div>

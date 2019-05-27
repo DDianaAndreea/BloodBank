@@ -39,4 +39,63 @@ class spitale_m extends CI_Model {
 		$this->db->delete('spitale');
 	}
 
+	public function get_cantitate($id_spital)
+	{
+		$this->db->select('cantitate');
+		$this->db->from('spitale');
+		$this->db->where('ID',$id_spital);
+
+		$query=$this->db->get();
+
+		return $query->result();
+
+	}
+
+	public function get_grupa($id_spital)
+	{
+		$this->db->select('grupa');
+		$this->db->from('spitale');
+		$this->db->where('ID',$id_spital);
+
+		$query=$this->db->get();
+
+		return $query->result();
+
+	}
+
+	public function get_rh($id_spital)
+	{
+		$this->db->select('rh');
+		$this->db->from('spitale');
+		$this->db->where('ID',$id_spital);
+
+		$query=$this->db->get();
+
+		return $query->result();
+
+	}
+	public function get_cantitate_stoc($grupa, $rh){
+		$this->db->select('cantitate',);
+		$this->db->from('stoc');
+		$this->db->where('grupa',$grupa);
+		$this->db->where('rh',$rh);
+
+		$query=$this->db->get();
+
+		return $query->result();
+	}
+
+	public function get_id_stoc($grupa, $rh){
+		$this->db->select('id',);
+		$this->db->from('stoc');
+		$this->db->where('grupa',$grupa);
+		$this->db->where('rh',$rh);
+
+		$query=$this->db->get();
+
+		return $query->result();
+	}
+
+
+
 	}
