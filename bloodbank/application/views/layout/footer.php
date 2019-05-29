@@ -1,6 +1,6 @@
     <a href="#" class="cta-link element-animate" data-animate-effect="fadeIn" data-toggle="modal" data-target="#modalAppointment">
-      <span class="heading">Ai intrebari sau propuneri?</span>
-      <span class="sub-heading">Lasa un mesaj</span>
+      <span class="heading">Ai întrebări sau propuneri?</span>
+      <span class="sub-heading">Lasă un mesaj</span>
     </a>
     <!-- END cta-link -->
 
@@ -11,22 +11,22 @@
             <h3>Servicii</h3>
             <ul class="footer-link list-unstyled">
               <li><a href='<?php echo base_url("cerere_donare") ?>'>Donare</a></li>
-              <li><a href='<?php echo base_url("cerere_pacient") ?>'>Primire pacienti</a></li>
+              <li><a href='<?php echo base_url("cerere_pacient") ?>'>Primire pacienți</a></li>
               <li><a href='<?php echo base_url("cerere_spital") ?>'>Primire centre</a></li>
             </ul>
             <br>
-            <h3>Tot ce trebuie sa stii</h3>
+            <h3>Tot ce trebuie să știi</h3>
             <ul class="footer-link list-unstyled">
-              <li><a href='<?php echo base_url("dece") ?>'>De ce sa donezi si cine are nevoie de donatiile tale</a></li>
-              <li><a href='<?php echo base_url("cum") ?>'>Cum sa donezi si informatiile necesare</a></li>
-              <li><a href='<?php echo base_url("unde") ?>'>Unde sa donezi</a></li>
+              <li><a href='<?php echo base_url("dece") ?>'>De ce să donezi și cine are nevoie de donațiile tale</a></li>
+              <li><a href='<?php echo base_url("cum") ?>'>Cum să donezi și informațiile necesare</a></li>
+              <li><a href='<?php echo base_url("unde") ?>'>Unde să donezi</a></li>
             </ul>
           </div>
           <div class="col-md-3 mb-5">
             <h3>Evenimente</h3>
             <ul class="footer-link list-unstyled">
-              <li><a href='<?php echo base_url("campanii") ?>'>Evenimente de recoltare a sangelui</a></li>
-              <li><a href='<?php echo base_url("cazuri") ?>'>Cazuri ale pacientilor</a></li>
+              <li><a href='<?php echo base_url("campanii") ?>'>Evenimente de recoltare a sângelui</a></li>
+              <li><a href='<?php echo base_url("cazuri") ?>'>Cazuri ale pacienților</a></li>
             </ul>
           </div>
           <div class="col-md-3 mb-5">
@@ -37,7 +37,7 @@
           </div>
           <div class="col-md-3 mb-5">
             <h3>Locatie &amp; Contact</h3>
-            <p class="mb-5">Aleea Viorelelor, Slatina, Olt, Romania</p>
+            <p class="mb-5">Aleea Viorelelor, Slatina, Olt, România</p>
 
             <h4 class="text-uppercase mb-3 h6 text-white">Email</h5>
             <p class="mb-5"><a href="mailto:info@yourdomain.com">info@bloodbank.com</a></p>
@@ -70,7 +70,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalAppointmentLabel">Contacteaza-ne!</h5>
+            <h5 class="modal-title" id="modalAppointmentLabel">Contactează-ne!</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -100,7 +100,7 @@
               
 
               <div class="form-group">
-                <label for="appointment_message" class="text-black">Mesajul tau</label>
+                <label for="appointment_message" class="text-black">Mesajul tău</label>
                 <textarea name="mesaj" type="text" id="appointment_message" class="form-control" cols="30" rows="5"></textarea>
               </div>
               <div class="form-group">

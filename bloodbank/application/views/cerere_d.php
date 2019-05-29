@@ -5,7 +5,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-12 element-animate">
             <h2 class="text-burg">Cerere</h2>
-            <p class="lead">In momentul campaniilor sau nevoii sanguine cu grupa dumneavoastra o sa primiti mail pentru a va putea prezenta la centrul de transfuzie.</p>
+            <p class="lead">În momentul campaniilor sau nevoii sanguine cu grupa dumneavoastră o să primiți mail pentru a vă putea prezenta la centrul de transfuzie.</p>
             <br>
             
           </div>
@@ -38,7 +38,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label  class="text-black">Data nasterii</label>
+                    <label  class="text-black">Data nașterii</label>
                     <input type="text" class="form-control" id="appointment_date">
                   </div>    
                 </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label class="text-black">Grupa sanguina </label><br>
+                    <label class="text-black">Grupa sanguină </label><br>
                     <input type="radio" name="gender" value="0"> 0</input>
                     <input type="radio" name="gender" value="A"> A</input>
                     <input type="radio" name="gender" value="B"> B</input>

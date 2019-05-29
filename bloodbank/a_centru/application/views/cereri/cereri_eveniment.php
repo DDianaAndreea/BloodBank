@@ -40,7 +40,7 @@
                                     </tr>
                                 </tbody>
                             </table> 
-                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete_propunere/'.$eveniment->ID)?>">Sterge</a> 
+                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete_propunere/'.$eveniment->ID)?>">Șterge</a> 
               
                         </div>
 

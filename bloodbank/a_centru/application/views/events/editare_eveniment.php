@@ -11,7 +11,7 @@
 									</div>
 									
 									<div class="breadcomb-ctn">
-										<h2>Editeaza evenimentul</h2>
+										<h2>Editează evenimentul</h2>
 
 										
 									
@@ -61,7 +61,7 @@
                 <thead>
                     <tr class="col-md-6">
                         <th>Data</th>
-                        <th>Locatia</th>
+                        <th>Locația</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -86,7 +86,7 @@
         <?php endforeach?>
             <br>
 
-            <input type="submit" name="submit" value="Modifica">
+            <input type="submit" name="submit" value="Modifică">
 
         </form>
             

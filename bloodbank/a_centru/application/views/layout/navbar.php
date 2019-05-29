@@ -146,25 +146,25 @@
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="<?php echo base_url('cereri_donatori')?>">Donatori</a>
                                 </li>
-                                <li><a href="<?php echo base_url('cereri_pacienti')?>">Pacienti</a>
+                                <li><a href="<?php echo base_url('cereri_pacienti')?>">Pacienți</a>
                                 </li>
                                 <li><a href="<?php echo base_url('cereri_spitale')?>">Spitale</a>
                                 </li>
-                                <li><a href="<?php echo base_url('cereri_eveniment')?>">Eveniment</a>
+                                <li><a href="<?php echo base_url('cereri_eveniment')?>">Evenimente</a>
                                 </li>
                             </ul>
                         </div>
                         <div id="tabele" class="tab-pane notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="<?php echo base_url('pacienti')?>">Pacienti</a>
+                                <li><a href="<?php echo base_url('pacienti')?>">Pacienți</a>
                                 </li>
                                 <li><a href="<?php echo base_url('spitale')?>">Spitale</a>
                                 </li>
                                 <li><a href="<?php echo base_url('donatori-activi')?>">Donatori activi</a>
                                 </li>
-                                <li><a href="<?php echo base_url('donartori-inactivi')?>">Donatori in asteptare</a>
+                                <li><a href="<?php echo base_url('donartori-inactivi')?>">Donatori în așteptare</a>
                                 </li>
-                                <li><a href="<?php echo base_url('donartori-respinsi')?>">Donatori respinsi</a>
+                                <li><a href="<?php echo base_url('donartori-respinsi')?>">Donatori respinși</a>
                                 </li>
                                 <li><a href="<?php echo base_url('voluntari')?>">Voluntari</a>
                                 </li>
@@ -178,7 +178,7 @@
                                 </li>
                                 <li><a href="<?php echo base_url('evenimente')?>">Vizualizare</a>
                                 </li>
-                                <li><a href="<?php echo base_url('evenimente_in_asteptare')?>">In asteptare</a>
+                                <li><a href="<?php echo base_url('evenimente_in_asteptare')?>">În ațteptare</a>
                                 </li>
                             </ul>
                         </div>

@@ -16,7 +16,7 @@
                                         <tr>
                                             <th>Cantitate</th>
                                             <th>Rh</th>
-                                            <th>Grupa sanguina</th>
+                                            <th>Grupa sanguină</th>
                                             <!-- <th style="width: 60px">Price</th> -->
                                         </tr>
                                     </thead>
@@ -58,8 +58,8 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a class="btn btn-success" href="<?php echo base_url('spitale/make_active/'.$spital->ID) ?>">Accepta</a> 
-                            <a class="btn btn-danger"href="<?php echo base_url('spitale/delete/'.$spital->ID)?>">Sterge</a> 
+                            <a class="btn btn-success" href="<?php echo base_url('spitale/make_active/'.$spital->ID) ?>">Acceptă</a> 
+                            <a class="btn btn-danger"href="<?php echo base_url('spitale/delete/'.$spital->ID)?>">Șterge</a> 
               
                         </div>
 

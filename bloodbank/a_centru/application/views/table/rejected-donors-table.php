@@ -10,8 +10,8 @@
 										<i class="fa fa-user-times"></i>
 									</div>
 									<div class="breadcomb-ctn">
-										<h2>Donatori respinsi</h2>
-                                        <p>Donatorii au fost respinsi datorita rezultatelor probelor de laborator.</p>
+										<h2>Donatori respinși</h2>
+                                        <p>Donatorii au fost respinși datorită rezultatelor probelor de laborator.</p>
 										
 									</div>
 								</div>
@@ -36,10 +36,10 @@
                                     <tr>
                                         <th>Nume</th>
                                         <th>Prenume</th>
-                                        <th>Grupa Sanguina</th>
+                                        <th>Grupa Sanguină</th>
                                         <th>Rh</th>
                                         <th>Chestionarul donatorului</th>
-                                        <th>Fisa date personale</th>
+                                        <th>Fișă date personale</th>
                                         <th>Rezultatele din laborator </th>
                                     </tr>
                                 </thead>
@@ -53,7 +53,7 @@
                                         
                                         <td><a class="fa fa-file btn" style="color:#8B0000" href="<?php echo base_url('donatori/chestionar/'.$donator->ID)?>"></a> </td>
                                         <td><a class="fa fa-id-card btn" style="color:#8B0000" href="<?php echo base_url('donatori/carnetul_donatorului/'.$donator->ID)?>"></a> </td>
-                                        <td> <a  class="fa fa-times-circle btn" style="color:#8B0000" href="" data-toggle="modal" data-target="#modalAppointment"> nu aproba donarea</a> 
+                                        <td> <a  class="fa fa-times-circle btn" style="color:#8B0000" href="" data-toggle="modal" data-target="#modalAppointment"> nu aprobă donarea</a> 
                                         
                                     </tr>
                                     <?php endforeach?>
@@ -102,7 +102,7 @@
               
 
               <div class="form-group">
-                <label for="appointment_message" class="text-black">Mesajul tau</label>
+                <label for="appointment_message" class="text-black">Mesajul </label>
                 <textarea name="mesaj" type="text" id="appointment_message" class="form-control" cols="30" rows="5"></textarea>
               </div>
               <div class="form-group">

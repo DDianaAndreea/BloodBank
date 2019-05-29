@@ -31,7 +31,7 @@
             <span><?php echo $campanie->data?></span><br>
             <span><?php echo $campanie->locatie?></span>
             <p class="lead"> <?php echo $campanie->descriere?> </p>
-            <a href="" class="btn btn-danger" style="font-color:white;">Vreau sa particip</a>
+            <a href="" class="btn btn-danger" style="font-color:white;">Vreau să particip</a>
            </div>
         </div>
 

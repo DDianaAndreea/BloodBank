@@ -80,7 +80,7 @@
                                     <tbody>
                                         <tr>
                                             
-                                            <td>Creste stocul</td>
+                                            <td>Crește stocul</td>
                                             <td ><a href="" class="fa fa-plus btn" style="color:#8B0000" data-toggle="modal" data-target="#cresteStoc"></a></td>
                                         </tr>
                                         <tr>
@@ -113,11 +113,11 @@
           <h4 class="modal-title">Actualizare stocuri</h4>
         </div>
         <div class="modal-body">
-          <p>Adauga la stocul existent</p>
+          <p>Adaugă la stocul existent</p>
           <p>Cantitatea:
           	<input class="form-control" type="text" name="cantitate_de_scazut" placeholder=" numarul de pungi">
           </p>
-          <p>Grupa sanguina :</p>
+          <p>Grupa sanguină :</p>
           	<select class="form-control" name="grupa">
           		<option value="">alege grupa </option>
           			<?php foreach ($stocuri as $stoc): ?>
@@ -135,7 +135,7 @@
         </div>
         <br>
         <div class="modal-footer" >
-          <input  class="btn btn-default" style="background-color: #8B0000"  type="submit" name="submit" value="Adauga" >
+          <input  class="btn btn-default" style="background-color: #8B0000"  type="submit" name="submit" value="Adaugă" >
         </div>
       </div>
     </div>
@@ -156,7 +156,7 @@
           <p>Cantitatea:
           	<input class="form-control" type="text" name="cantitate_de_scazut" placeholder=" numarul de pungi">
           </p>
-          <p>Grupa sanguina :</p>
+          <p>Grupa sanguină :</p>
           	<select class="form-control" name="grupa">
           		<option value="">alege grupa </option>
           			<?php foreach ($stocuri as $stoc): ?>

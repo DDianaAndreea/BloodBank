@@ -152,4 +152,35 @@ class Donatori extends CI_Controller {
 		redirect('donatori/index','refresh');
 	}
 
+	public function donare_azi_home(){
+
+		$id=$this->uri->segment(3);
+		$grupa=$this->uri->segment(4);
+		$rh=$this->uri->segment(5);
+		
+		$this->donatori_m->donare_azi($id);
+
+		$cantitate_res = $this->stocuri_m->get_cantitate($grupa, $rh);
+
+		//echo "Cantitate: <pre>".print_r($cantitate_res,true)."</pre>";
+		foreach($cantitate_res as $cantitate){
+			$this->stocuri_m->actualizare_stoc_donator($cantitate->ID, $cantitate->cantitate+1);
+		}
+		
+
+		redirect('admin/index','refresh');
+	}
+
+	public function modifica_gr_rh(){
+		$postData=$this->input->post();
+		$id=$this->uri->segment(3);
+		
+		$this->donatori_m->modifica_gr_rh($id,$postData);
+
+		// echo "postData: <pre>".print_r($postData,true)."</pre>";
+		// echo "id: <pre>".print_r($id,true)."</pre>";
+
+		redirect('donatori/in_donors','refresh');
+	}
+
 }

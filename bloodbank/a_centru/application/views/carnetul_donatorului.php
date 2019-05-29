@@ -38,7 +38,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th class="col-md-3">Data nasterii:</th>
+                        <th class="col-md-3">Data nașterii:</th>
                         <th>Sexul:</th>
                         <th>Grupa:</th>
                         <th>Rh-ul:</th>
@@ -59,7 +59,7 @@
                     <tr>
                     	<th class="col-md-3">CNP:</th>
                         <th class="col-md-3">Serie:</th>
-                        <th>Numar:</th>
+                        <th>Număr:</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -74,7 +74,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                    	<th>Adresa:</th>
+                    	<th>Adresă:</th>
                         <th>Localitate:</th>
                         <th>Judet:</th>
                         <th>Email:</th>
@@ -96,7 +96,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>Data ultimei donari:</th>
+                        <th>Data ultimei donări:</th>
                         
                     </tr>
                 </thead>

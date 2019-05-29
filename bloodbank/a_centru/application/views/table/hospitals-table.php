@@ -35,7 +35,7 @@
                                         <th>Data cererii</th>
                                         <th>Denumire spital</th>
                                         <th>Cantitate</th>
-                                        <th>Grupa sanguina</th>
+                                        <th>Grupa sanguină</th>
                                         <th>Rh</th>
                                         <th>Cazul</th>
                                         <th>Telefon</th>

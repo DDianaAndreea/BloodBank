@@ -52,7 +52,7 @@
                 <h3 class="text-burg">Să nu ai/să nu fi avut următoarele: </h3>
                 <p>Afecţiuni cardiovasculare</p>
                 <p>Afecţiuni ale sistemului nervos central</p>
-                <p>Tendinţa patologică la sângerare</p>
+                <p>Tendinţă patologică la sângerare</p>
                 <p>Afecţiuni ale tractului gastrointestinal</p>
                 <p>Afecţiuni ale tractului genitourinar</p>
                 <p>Afecţiuni hematologice</p>
@@ -75,10 +75,10 @@
                 <p>Poţi consuma o cană cu ceai sau cafea, un mic dejun puţin consistent, legume, fructe, fără proteine şi grăsimi (lapte, unt, carne, etc).</p>
                 <p>Nu fuma înainte şi după donare cu o oră.</p>
                 <h3 class=" text-burg">După donare este recomandat</h3>
-                <p>Repaus in sala de asteptare 15-30 minute (este foarte important repausul post donare pentru a evita lipotimia pe scari , pe holuri si ranirea donatorului)</p>
+                <p>Repaus în sala de așteptare 15-30 minute (este foarte important repausul post donare pentru a evita lipotimia pe scări , pe holuri și rănirea donatorului)</p>
                 <p>Ridicarea greutăţilor în mâna din care s-a recoltat</p>
-                <p>Evitarea in urmatoarele 12 ore a efortlui fizic intens, conducerea autovehiculelor, consumul de alcool, fumatul imediat</p>
-                <p>Se recomanda  multe lichide; iar regimul alimentar va fi bogat în proteine animale (oua, carne).</p>
+                <p>Evitarea în urmatoarele 12 ore a efortlui fizic intens, conducerea autovehiculelor, consumul de alcool, fumatul imediat</p>
+                <p>Se recomanda  multe lichide, iar regimul alimentar va fi bogat în proteine animale (oua, carne).</p>
               </div>
 
               <div class="tab-pane fade" id="4" role="tabpanel" aria-labelledby="v-pills-settings-tab">

@@ -5,7 +5,7 @@
           <div class="col-md-1"></div>
           <div class="col-md-12 element-animate">
             <h2 class="text-burg">Cerere</h2>
-            <p class="lead">Pentru centrele de sanatate.</p>
+            <p class="lead">Pentru centrele de sănătate.</p>
             <br>
             
           </div>
@@ -38,7 +38,7 @@
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label class="text-black">Cantitate(nr de pungi) </label><br>
+                    <label class="text-black">Cantitate(nr. de pungi) </label><br>
                     <input type="text" class="form-control" name="cantitate">
                   </div>
                 </div>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label class="text-black">Grupa sanguina </label><br>
+                    <label class="text-black">Grupa sanguină </label><br>
                     <input type="radio" name="grupa" value="0"> 0</input>
                     <input type="radio" name="grupa" value="A"> A</input>
                     <input type="radio" name="grupa" value="B"> B</input>

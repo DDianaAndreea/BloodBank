@@ -10,8 +10,8 @@
 										<i class="fa fa-user"></i>
 									</div>
 									<div class="breadcomb-ctn">
-										<h2>Persoane care au nevoie de sange</h2>
-                                        <p>pacienti</p>
+										<h2>Persoane care au nevoie de sânge</h2>
+                                        <p>pacienți</p>
 										
 									</div>
 								</div>
@@ -37,7 +37,7 @@
                                         <th>Prenume</th>
                                         <th>sex</th>
                                         <th>rh</th>
-                                        <th>grupa sanguina</th>
+                                        <th>grupa sanguină</th>
                                         <th>data cererii</th>
                                         
                                     </tr>

@@ -15,7 +15,7 @@
 
 										<h5><?php echo $donator->data_cererii?></h5>
 									<?php endforeach?>
-                                        <a href="" class="btn btn-danger" data-toggle="modal" data-target="#datePersonale"> Adaugare date personale</a>
+                                        <a href="" class="btn btn-danger" data-toggle="modal" data-target="#datePersonale"> Adăugare date personale</a>
 
 										
 									</div>
@@ -35,7 +35,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th class="col-md-4">1.Considerati ca aveti o stare buna de sanatate?</th>
+                        <th class="col-md-4">1.Considerați că aveți o stare bună de sănătate?</th>
                         <th><?php echo $donator->c1?></th>
                        
                     </tr>
@@ -45,10 +45,10 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>2.In ultima vreme ati avut:</th>
-                        <th>-o pierdere in greutate neasteptata</th>
-                        <th>-febra neexplicabila</th>
-                        <th>-tratament stomatologic,vaccinari</th>
+                        <th>2.În ultima vreme ați avut:</th>
+                        <th>-o pierdere în greutate neașteptată</th>
+                        <th>-febră neexplicabilă</th>
+                        <th>-tratament stomatologic,vaccinări</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -65,7 +65,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">3.Urmati tratament medicamentos?</th>
+                        <th  class="col-md-4">3.Urmați tratament medicamentos?</th>
                         <th><?php echo $donator->c5?></th>
                     </tr>
                 </thead>
@@ -76,9 +76,9 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>4.In ultimele 12 luni ati avut contact sexual cu:</th>
-                        <th>-un partener cu hepatita sau HIV pozitiv</th>
-                        <th>-un partener ce se drogheaza prin injectii</th>
+                        <th>4.În ultimele 12 luni ați avut contact sexual cu:</th>
+                        <th>-un partener cu hepatită sau HIV pozitiv</th>
+                        <th>-un partener ce se droghează prin injecții</th>
                         <th>-un partener cu hemofilie</th>
                         <th>-parteneri multipli</th>
                     </tr>
@@ -98,7 +98,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">5.V-ati injectat vreodata droguri?</th>
+                        <th  class="col-md-4">5.V-ați injectat vreodată droguri?</th>
                         <th><?php echo $donator->c10?></th>
                     </tr>
                 </thead>
@@ -109,7 +109,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">6.Ati schimbat partenerul(partenera) in ultimele 6 luni?</th>
+                        <th  class="col-md-4">6.Ați schimbat partenerul(partenera) în ultimele 6 luni?</th>
                         <th><?php echo $donator->c11?></th>
                     </tr>
                 </thead>
@@ -120,11 +120,11 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>7.De la ultima donare,sau in ultimele 12 luni ati suferit:</th>
-                        <th>-o interventie chirurcicala sau investigatii medicale?</th>
-                        <th>-tatuaje,acupunctura,gauri pentru cercei?</th>
-                        <th>-ati fost transfuat(a)?</th>
-                        <th>-ati fost insarcinata?</th>
+                        <th>7.De la ultima donare,sau în ultimele 12 luni ați suferit:</th>
+                        <th>-o intervenție chirurcicală sau investigații medicale?</th>
+                        <th>-tatuaje,acupunctură,găuri pentru cercei?</th>
+                        <th>-ați fost transfuat(ă)?</th>
+                        <th>-ați fost însărcinată?</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -142,7 +142,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">8.Ati fost in detentie in ultimii ani?</th>
+                        <th  class="col-md-4">8.Ați fost în detenție în ultimii ani?</th>
                         <th><?php echo $donator->c16?></th>
                     </tr>
                 </thead>
@@ -153,7 +153,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-6">9.Ati fost expusi la hepatita(bolnavi in familie sau risc profesional)?</th>
+                        <th  class="col-md-6">9.Ați fost expuși la hepatită(bolnavi în familie sau risc profesional)?</th>
                         <th><?php echo $donator->c17?></th>
                     </tr>
                 </thead>
@@ -164,9 +164,9 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>10.Ati suferit vreodata de:</th>
-                        <th>- icter,tuberculoza,febra reumatica,malarie?</th>
-                        <th>-boli de inima,tensiune arteriala mare sau mica?</th>
+                        <th>10.Ați suferit vreodata de:</th>
+                        <th>- icter,tuberculoză,febră reumatică,malarie?</th>
+                        <th>-boli de inimă,tensiune arterială mare sau mică?</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -181,7 +181,7 @@
                 <thead>
                     <tr>
                         <th>-boli transmise sexual(hiv,sifilis etc)</th>
-                        <th>-accidente vasculate cardiace sau cerebrale?</th>
+                        <th>-accidente vasculare cardiace sau cerebrale?</th>
                         <th>-convulsii,boli nervoase?</th>
                         <th>-boli cronice(diabet,ulcer,cancer,astm)</th>
                     </tr>
@@ -200,7 +200,7 @@
              <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">11.Sunteti fumator?</th>
+                        <th  class="col-md-4">11.Sunteți fumător?</th>
                         <th><?php echo $donator->c24?></th>
                     </tr>
                 </thead>
@@ -211,7 +211,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">12.Consumati alcool regulat si in cantitati mai mari?</th>
+                        <th  class="col-md-4">12.Consumați alcool regulat și în cantități mai mari?</th>
                         <th><?php echo $donator->c25?></th>
                     </tr>
                 </thead>
@@ -222,7 +222,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">13.Ati fost amanat la o donare anterioara?</th>
+                        <th  class="col-md-4">13.Ați fost amânat la o donare anterioară?</th>
                         <th><?php echo $donator->c26?></th>
                     </tr>
                 </thead>
@@ -233,7 +233,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th  class="col-md-4">14.Ati fost refuzat la o donare anterioara?</th>
+                        <th  class="col-md-4">14.Ați fost refuzat la o donare anterioară?</th>
                         <th><?php echo $donator->c27?></th>
                     </tr>
                 </thead>
@@ -248,8 +248,8 @@
         <div class="container">
             <div class="row" style="position: absolute;">
             
-                <a href="<?php echo base_url('donatori/delete_donator/'.$donator->ID) ?>" class="btn btn-danger">Nu se incadreaza ca donator</a>
-                <a href="<?php echo base_url('donatori/in_asteptare/'.$donator->ID) ?>" class="btn btn-success">In asteptare pana la verificarea analizelor</a>
+                <a href="<?php echo base_url('donatori/delete_donator/'.$donator->ID) ?>" class="btn btn-danger">Nu se încadrează ca donator</a>
+                <a href="<?php echo base_url('donatori/in_asteptare/'.$donator->ID) ?>" class="btn btn-success">În așteptare până la verificarea analizelor</a>
             
             </div>
         </div>
@@ -300,7 +300,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label  class="text-black">Judet</label>
+                    <label  class="text-black">Județ</label>
                     <input type="text" name="judet" class="form-control" >
                   </div>
                   

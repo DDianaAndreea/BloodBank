@@ -11,7 +11,7 @@
 									</div>
 									
 									<div class="breadcomb-ctn">
-										<h2>Creaza un eveniment</h2>
+										<h2>Crează un eveniment</h2>
 
 										
 									
@@ -60,7 +60,7 @@
                 <thead>
                     <tr class="col-md-6">
                         <th>Data</th>
-                        <th>Locatia</th>
+                        <th>Locația</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -84,7 +84,7 @@
             </table>
             <br>
 
-            <input type="submit" name="submit" value="Incarca">
+            <input type="submit" name="submit" value="Încarca">
 
         </form>
             

@@ -10,7 +10,7 @@
 										<i class="fa fa-user-plus"></i>
 									</div>
 									<div class="breadcomb-ctn">
-										<h2>Donatori in asteptare</h2>
+										<h2>Donatori în așteptare</h2>
 										
 									</div>
 								</div>
@@ -35,8 +35,9 @@
                                     <tr>
                                         <th>Nume</th>
                                         <th>Prenume</th>
-                                        <th>Grupa Sanguina</th>
+                                        <th>Grupa Sanguină</th>
                                         <th>Rh</th>
+                                        <th></th>
                                         <th>Chestionarul donatorului</th>
                                         <th>Carnetul donatorului</th>
                                         <th>Rezultatele din laborator </th>
@@ -49,11 +50,12 @@
                                         <td><?php echo $donator->prenume?></td>
                                         <td><?php echo $donator->grupa_sanguina?></td>
                                         <td><?php echo $donator->rh?></td>
+                                        <td><a class="fa fa-edit btn" data-toggle="modal" data-target="#modifica" style="color:#8B0000" href=""></a> </td>
                                         
                                         <td><a class="fa fa-file btn" style="color:#8B0000" href="<?php echo base_url('donatori/chestionar/'.$donator->ID)?>"></a> </td>
                                         <td><a class="fa fa-id-card btn" style="color:#8B0000 " href="<?php echo base_url('donatori/carnetul_donatorului/'.$donator->ID)?>"></a> </td>
-                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('donatori/activare/'.$donator->ID)?>"> aproba donarea</a>
-                                            <a class="fa fa-times-circle btn" style="color:#8B0000" href="<?php echo base_url('donatori/donator_respins/'.$donator->ID)?>"> nu aproba donarea</a></td>
+                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('donatori/activare/'.$donator->ID)?>"> aprobă donarea</a>
+                                            <a class="fa fa-times-circle btn" style="color:#8B0000" href="<?php echo base_url('donatori/donator_respins/'.$donator->ID)?>"> nu aprobă donarea</a></td>
                                     </tr>
                                     <?php endforeach?>
                                     
@@ -62,3 +64,33 @@
                         </div>
                     </div>
                 </div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="modifica" >
+    <form action="<?php echo base_url('donatori/modifica_gr_rh/'.$donator->ID)?>" method="POST">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Actualizare date donator</h4>
+        </div>
+        <div class="modal-body">
+          <p>Grupa:
+            <input class="form-control" type="text" name="grupa_sanguina" >
+          </p>
+          <p>Rh :</p>
+            <select class="form-control" name="rh">
+                <option value="">alege rh </option>
+                            <option value="+ "> +</option>
+                            <option value="- "> -</option>
+            </select>
+        </div>
+        <br>
+        <div class="modal-footer" >
+          <input  class="btn btn-default" style="background-color: #8B0000"  type="submit" name="submit" value="Modifică" >
+        </div>
+      </div>
+    </div>
+</form>
+  </div>

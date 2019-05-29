@@ -34,10 +34,10 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>Data nastere</th>
+                        <th>Dată naștere</th>
                         <th>sex</th>
                         <th>rh</th>
-                        <th>grupa sanguina</th>
+                        <th>grupa sanguină</th>
                     </tr>
                 </thead>
                     <tbody>
@@ -77,7 +77,7 @@
                             <td><?php echo $pacient->telefon?></td>
                             <td><?php echo $pacient->public?></td>
                             <?php if ($pacient->public == 'Da'): ?>
-                                <td><a class="btn btn-secondary" href="<?php echo base_url('cazuri/view_caz/'.$pacient->ID) ?>" > Publica</a></td>
+                                <td><a class="btn btn-secondary" href="<?php echo base_url('cazuri/view_caz/'.$pacient->ID) ?>" > Publică</a></td>
                             <?php endif; ?>
 
                         </tr>

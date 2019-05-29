@@ -12,7 +12,7 @@
 									
 									<div class="breadcomb-ctn">
 										<h2>Evenimente</h2>
-										<p>in asteptare</p>
+										<p>în așteptare</p>
 
 										
 									</div>
@@ -42,7 +42,7 @@
                             <thead>
                                 <tr>
                                     <th>Data</th>
-                                    <th>Locatia</th>
+                                    <th>Locația</th>
                                     <th>Imagine</th>
                                             
                                 </tr>
@@ -68,9 +68,9 @@
                             </tr>
                         </tbody>
                     </table>
-                    		<a class="btn btn-warning"href="<?php echo base_url('evenimente/editare_eveniment/'.$ev->ID)?>">Editeaza</a> 
-                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete/'.$ev->ID)?>">Sterge</a>  
-                            <a class="btn btn-success"href="<?php echo base_url('evenimente/activ/'.$ev->ID)?>">Activeaza</a> 
+                    		<a class="btn btn-warning"href="<?php echo base_url('evenimente/editare_eveniment/'.$ev->ID)?>">Editează</a> 
+                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete/'.$ev->ID)?>">Șterge</a>  
+                            <a class="btn btn-success"href="<?php echo base_url('evenimente/activ/'.$ev->ID)?>">Activează</a> 
 
               
             	</div>

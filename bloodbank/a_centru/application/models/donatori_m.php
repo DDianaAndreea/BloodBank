@@ -125,4 +125,15 @@ class donatori_m extends CI_Model {
 		$this->db->update('carnetul_donatorului',$data);
 	}
 
+	function modifica_gr_rh($id,$postData){
+		$data= array(
+			'rh'=> $postData['rh'],
+ 			'grupa_sanguina' => $postData['grupa_sanguina'],
+ 			
+ 		);
+ 			$this->db->where('ID',$id);
+			$this->db->update('donatori',$data);
+
+	}
+
 	}

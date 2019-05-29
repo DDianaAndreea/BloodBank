@@ -89,7 +89,7 @@
                   <span class="icon flaticon-first-aid-kit"></span>
                   <div class="media-body">
                     <h3 class="mt-0 text-black">Serviciile Medicale</h3>
-                    <!-- <p>Donatorii sunt tratati cu grija de catre personal.</p> -->
+                    <!-- <p>Donatorii sunt tratați cu grijă de către personal.</p> -->
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@
                 <div class="media d-block media-feature text-center">
                   <span class="icon flaticon-hospital-bed"></span>
                   <div class="media-body">
-                    <h3 class="mt-0 text-black">Pacientii</h3>
+                    <h3 class="mt-0 text-black">Pacienții</h3>
                     <!-- <p>Sunt persoane care au nevoie de transfuzii sau preparate sanguine.</p> -->
                   </div>
                 </div>
@@ -110,7 +110,7 @@
                   <span class="icon flaticon-doctor"></span>
                   <div class="media-body">
                     <h3 class="mt-0 text-black">Personal</h3>
-                    <!-- <p>Personalul este unul calificat format din doctori si asistenti foarte bine pregatiti.</p> -->
+                    <!-- <p>Personalul este unul calificat format din doctori și asistenți foarte bine pregătiți.</p> -->
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link active" data-toggle="pill" href="#centrul" aria-selected="true"><span></span> Centrul</a>
               <a class="nav-link" data-toggle="pill" href="#servicii" aria-selected="false"><span></span> Serviciile Medicale</a>
-              <a class="nav-link" data-toggle="pill" href="#pacienti" aria-selected="false"><span></span> Pacientii</a>
+              <a class="nav-link" data-toggle="pill" href="#pacienti" aria-selected="false"><span></span> Pacienții</a>
               <a class="nav-link" data-toggle="pill" href="#personal" aria-selected="false"><span></span> Personalul</a>
             </div>
           </div>
@@ -140,28 +140,28 @@
               <div class="tab-pane fade show active" id="centrul" role="tabpanel" >
                 <span class="icon flaticon-hospital"></span>
                 <h2 class="text-burg">Centrul</h2>
-                <p class="lead">Centrul de transfuzii este instituţia abilitată să recolteze sânge, să-l analizeze, să-l prelucreze şi să furnizeze produsele rezultate pacientilor.</p>
-                <p>Centrul are toate aprobarile necesare de functionare.</p>
+                <p class="lead">Centrul de transfuzii este instituţia abilitată să recolteze sânge, să-l analizeze, să-l prelucreze şi să furnizeze produsele rezultate pacienților.</p>
+                <p>Centrul are toate aprobările necesare de funcționare.</p>
                 <!-- <p>Exista posibilitatea deplasarii inafara sediului nostru.</p> -->
                 <!-- <p><a href="#" class="text-burg" >Learn More</a></p> -->
               </div>
               <div class="tab-pane fade" id="servicii" role="tabpanel" >
                 <span class="icon flaticon-first-aid-kit"></span>
                 <h2 class="text-burg">Servicii medicale </h2>
-                <p class="lead">Donatorii de sange beneficiaza de analize medicale gratuite.Efectuarea testelor de laborator din sângele recoltat: grupa sanguină, Rh D, hepatită B, C, HIV, HTLV, ALT, lues, etc. și eliberarea Buletinelor de analiză la cererea.</p>
+                <p class="lead">Donatorii de sânge beneficiază de analize medicale gratuite.Efectuarea testelor de laborator din sângele recoltat: grupa sanguină, Rh D, hepatită B, C, HIV, HTLV, ALT, lues, etc. și eliberarea Buletinelor de analiză la cererea.</p>
                 
               </div>
               <div class="tab-pane fade" id="pacienti" role="tabpanel" >
                 <span class="icon flaticon-hospital-bed"></span>
-                <h2 class="text-burg">Pacientii</h2>
-                <p class="lead">Pacientii sunt persoanele care au nevoie de transfuzii sau preparate sanguine realizate din sângele donat: globule roşii, plasmă sau trombocite.</p>
+                <h2 class="text-burg">Pacienții</h2>
+                <p class="lead">Pacienții sunt persoanele care au nevoie de transfuzii sau preparate sanguine realizate din sângele donat: globule roşii, plasmă sau trombocite.</p>
               
               </div>
               <div class="tab-pane fade" id="personal" role="tabpanel" >
                 <span class="icon flaticon-doctor"></span>
                 <h2 class="text-burg">Personalul</h2>
-                <p class="lead">Este o echipa calificata formata din doctori si asistenti.</p>
-                <p class="lead">Echipa se imparte de la consultantii pentru donatori si prelevare sange pana la laboratoarele de cercetare si validare.</p>
+                <p class="lead">Este o echipă calificată formată din doctori și asistenti.</p>
+                <p class="lead">Echipa se împarte de la consultanții pentru donatori și prelevare sânge până la laboratoarele de cercetare și validare.</p>
                
               </div>
             </div>
@@ -320,7 +320,7 @@
         <div class="row justify-content-center mb-5 element-animate">
           <div class="col-md-8 text-center mb-5">
             <h2 class="text-uppercase heading border-bottom mb-4">Evenimente </h2>
-            <p class="mb-0 lead">Donatiile se fac in mod voluntar si neremunerat.Te asteptam la evenimente atat pentru a dona cat si pentru a afla mai multe detalii despre noi si oamenii care au nevoie de noi.</p>
+            <p class="mb-0 lead">Donațiile se fac în mod voluntar și neremunerat.Te asteptăm la evenimente atât pentru a dona cat și pentru a afla mai multe detalii despre noi și oamenii care au nevoie de noi.</p>
           </div>
         </div>
         <div class="row element-animate">

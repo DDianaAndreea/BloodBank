@@ -35,9 +35,9 @@
                                     <tr>
                                         <th>Nume</th>
                                         <th>Prenume</th>
-                                        <th>Grupa Sanguina</th>
+                                        <th>Grupa Sanguină</th>
                                         <th>Rh</th>
-                                        <th>Data ultimei donari</th>
+                                        <th>Data ultimei donări</th>
                                         <th>Chestionarul donatorului</th>
                                         <th>Carnetul donatorului</th>
                                         <th>A donat Acum </th>

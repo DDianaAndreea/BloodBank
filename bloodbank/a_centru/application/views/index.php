@@ -153,8 +153,7 @@
     <!-- End Sale Statistic area-->
 
 <br>
-<br>
-    <!-- Start Email Statistic area-->
+    <!-- Start Statistic area-->
     <div class="notika-email-post-area">
         <div class="container">
             <div class="row">
@@ -359,9 +358,82 @@
 
 
             </div> 
+
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
+                        <div class="rc-it-ltd">
+                            <div class="recent-items-ctn">
+                                <div class="recent-items-title">
+                                    <h2>Donatori </h2>
+                                </div>
+                            </div>
+                            <div class="recent-items-inn">
+                                <table class="table table-inner table-vmiddle">
+                                    <thead>
+                                        <tr>
+                                            
+                                            <th>Grupa</th>
+                                            <th>Numarul de donatori</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody >
+                                        <tr>
+                                            <td>0</td>
+                                            <td><?php echo $donatori_cu_grupa_0?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>A</td>
+                                            <td><?php echo $donatori_cu_grupa_A?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>B</td>
+                                            <td><?php echo $donatori_cu_grupa_B?></td>
+                                        </tr>
+                                        <tr>
+                                            <td>AB</td>
+                                            <td><?php echo $donatori_cu_grupa_AB?></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img style="border-radius: 4px; width: 370px; height: 287px" src="<?php echo base_url('assets/img/grupe-rh.jpg') ?>"/>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
+                        <div class="rc-it-ltd">
+                            <div class="recent-items-ctn">
+                                <div class="recent-items-title">
+                                    <h2>Căutare Donatori:</h2>
+                                </div>
+                            </div>
+                            <div class="recent-items-inn">
+                                <div >
+                                    <form method="post" action="<?php echo base_url('admin/skeyword')?>">
+                                        <input type="text" name="key" id="search_box" class="form-control input-lg typeahead" placeholder="caută după CNP" />
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
         </div>
     </div>
-    <!-- End Email Statistic area-->
+    <!-- End  Statistic area-->
     
 <br>
 
@@ -595,3 +667,7 @@
         </div>
     </div> -->
  </div>
+
+
+
+

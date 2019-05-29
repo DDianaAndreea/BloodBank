@@ -14,10 +14,10 @@
                                 <table class="table table-inner table-vmiddle">
                                     <thead>
                                         <tr>
-                                            <th>Data nastere</th>
+                                            <th>Dată naștere</th>
                                             <th>Sex</th>
                                             <th>Rh</th>
-                                            <th>Grupa sanguina</th>
+                                            <th>Grupa sanguină</th>
                                             <!-- <th style="width: 60px">Price</th> -->
                                         </tr>
                                     </thead>

@@ -8,7 +8,7 @@
           <div class="col-md-5 element-animate">
             <h2 class="text-burg">Vrei să donezi?</h2>
             <br>
-            <p class="lead">Verifică mai întâi toate informaţiile si cerinţele care ţi le punem la dispoziţie</p>
+            <p class="lead">Verifică mai întâi toate informațiile și cerințele care ți le punem la dispoziție</p>
             <a href='<?php echo base_url("dece") ?>' class="btn btn-danger">De ce?</a>
             <a href='<?php echo base_url("cum") ?>' class="btn btn-danger" >Cum?</a>
             <a href='<?php echo base_url("unde") ?>' class="btn btn-danger" >Unde?</a>

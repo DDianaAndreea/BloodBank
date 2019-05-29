@@ -58,7 +58,7 @@
           <div class="col-md-5 element-animate">
             
             <h5 class="text-uppercase mb-3">Adresa</h5>
-            <p class="mb-5">Strada Aleea Viorelelor,4 <br> Slatina,Romania</p>
+            <p class="mb-5">Strada Aleea Viorelelor,4 <br> Slatina,România</p>
             
             <h5 class="text-uppercase mb-3">Email</h5>
             <p class="mb-5"><a href="mailto:info@yourdomain.com">info@bloodbank.com</a>

@@ -14,10 +14,10 @@
                                 <table class="table table-inner table-vmiddle">
                                     <thead>
                                         <tr>
-                                            <th>Data nastere</th>
+                                            <th>Dată naștere</th>
                                             <th>Sex</th>
                                             <th>Rh</th>
-                                            <th>Grupa sanguina</th>
+                                            <th>Grupa sanguină</th>
                                             <!-- <th style="width: 60px">Price</th> -->
                                         </tr>
                                     </thead>
@@ -60,8 +60,8 @@
                                         </tr>
                                     </tbody>
                             </table>
-                            <a class="btn btn-success" href="<?php echo base_url('pacienti/make_active/'.$pacient->ID) ?>">Accepta</a> 
-                            <a class="btn btn-danger"href="<?php echo base_url('pacienti/delete/'.$pacient->ID)?>">Sterge</a> 
+                            <a class="btn btn-success" href="<?php echo base_url('pacienti/make_active/'.$pacient->ID) ?>">Acceptă</a> 
+                            <a class="btn btn-danger"href="<?php echo base_url('pacienti/delete/'.$pacient->ID)?>">Șterge</a> 
               
                         </div>
 

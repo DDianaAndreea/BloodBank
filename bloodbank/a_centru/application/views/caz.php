@@ -37,7 +37,7 @@
                     <tr>
                         <th>Nume</th>
                         <th>Prenume</th>
-                        <th>Grupa sanguina</th>
+                        <th>Grupa sanguină</th>
                         <th>Caz</th>
                     </tr>
                 </thead>
@@ -55,7 +55,7 @@
 
 					</tbody>
             </table>
-            <input type="submit" name="submit" value="Publica">
+            <input type="submit" name="submit" value="Publică">
             </form>
             
             

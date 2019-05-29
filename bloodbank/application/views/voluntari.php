@@ -5,9 +5,9 @@
           <div class="col-md-1"></div>
           <div class="col-md-12 element-animate">
             <h2 class="text-burg">Voluntariat</h2>
-            <p class="lead">Vrei sa fii instiintat in legatura cu campaniile noastre de donatii sau vrei sa initiezi o campanie?</p>
-            <p class="lead">Te rugam sa completezi datele necesare si vei fii contactat ( in cazul initierii unei campanii) sau vei primii mailuri cu detalii despre campanii (in cazul voluntariatului).</p>
-            <p class="lead">Multumim de colaborarea si increderea pe care ne-o acordati !</p>
+            <p class="lead">Vrei sa fii înștiințat în legătură cu campaniile noastre de donații sau vrei să inițiezi o campanie?</p>
+            <p class="lead">Te rugăm să completezi datele necesare și vei fii contactat ( în cazul inițierii unei campanii) sau vei primii mailuri cu detalii despre campanii (în cazul voluntariatului).</p>
+            <p class="lead">Mulțumim de colaborarea și încrederea pe care ne-o acordați !</p>
             <br>
             
           </div>
@@ -53,8 +53,8 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label class="text-black"> </label><br>
-                    <input type="radio" name="tip" value="voluntar" > Vreau sa fiu Voluntar!</input><br>
-                    <input type="radio" name="tip" value="initiator"> Vreau sa Initiez o Campanie!</input>
+                    <input type="radio" name="tip" value="voluntar" > Vreau să fiu Voluntar!</input><br>
+                    <input type="radio" name="tip" value="initiator"> Vreau să Inițiez o Campanie!</input>
                   </div>
                 </div>
                 

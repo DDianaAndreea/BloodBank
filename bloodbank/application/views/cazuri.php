@@ -31,7 +31,7 @@
           <div class="col-md-7 element-animate">
             <?php foreach($cazuri as $caz):?>
             <h2 class="text-burg"><?php echo $caz->prenume?> <?php echo $caz->nume?></h2>
-            <span>Grupa sanguina: <?php echo $caz->grupa_sanguina?></span><br>
+            <span>Grupa sanguină: <?php echo $caz->grupa_sanguina?></span><br>
             <p class="lead"><?php echo $caz->caz?></p>
             <?php endforeach?>
            </div>

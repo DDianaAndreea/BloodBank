@@ -137,5 +137,62 @@ class home_m extends CI_Model {
 		return count( $result );
 	}
 
+	public function get_nr_d_0(){
+		$this->db->select('*');
+		$this->db->from('donatori');
+		$this->db->where('grupa_sanguina', '0');
+		$this->db->where('activ', '2');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
+	}
+
+	public function get_nr_d_A(){
+		$this->db->select('*');
+		$this->db->from('donatori');
+		$this->db->where('grupa_sanguina', 'A');
+		$this->db->where('activ', '2');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
+	}
+
+	public function get_nr_d_B(){
+		$this->db->select('*');
+		$this->db->from('donatori');
+		$this->db->where('grupa_sanguina', 'B');
+		$this->db->where('activ', '2');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
+	}
+	public function get_nr_d_AB(){
+		$this->db->select('*');
+		$this->db->from('donatori');
+		$this->db->where('grupa_sanguina', 'AB');
+		$this->db->where('activ', '2');
+		
+		$query = $this->db->get();
+		$result = $query->result();
+		
+		return count( $result );
+	}
+
+
+	public function search($key)
+	{
+		$this->db->like('cnp', $key);
+		
+
+		$query=$this->db->get('carnetul_donatorului');
+		return $query->result();
+	}
+
 
 }

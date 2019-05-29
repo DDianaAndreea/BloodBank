@@ -41,7 +41,7 @@
                             <thead>
                                 <tr>
                                     <th>Data</th>
-                                    <th>Locatia</th>
+                                    <th>Locația</th>
                                     <th>Imagine</th>
                                             
                                 </tr>
@@ -68,7 +68,7 @@
                         </tbody>
                     </table>
                            
-                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete_ev/'.$ev->ID)?>">Sterge</a> 
+                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete_ev/'.$ev->ID)?>">Șterge</a> 
               
             	</div>
 
