@@ -11,7 +11,10 @@
                                     </div>
                                     <div class="breadcomb-ctn">
                                         <h2>Donatori activi</h2>
-                                        
+                                        <form method="post" action="<?php echo base_url('donatori/skeyword')?>">
+                                            <input type="text" style="width:490px; " name="don_key" id="don_search_box"  class="form-control input-lg typeahead" placeholder="caută donator după Nume, Prenume sau Grupa Sanguină" />
+                                        </form>
+                            
                                     </div>
                                 </div>
                             </div>
@@ -25,11 +28,10 @@
     
 <div class="container">
 <div class="normal-table-list mg-t-30">
-                        <!-- <div class="basic-tb-hd">
-                            <h2>Table Condensed</h2>
-                            <p>Make tables more compact by cutting cell padding in half (<code>.table-condensed</code>).</p>
-                        </div> -->
-                        <div class="bsc-tbl-cds">
+                        <div class="basic-tb-hd" >
+                            
+                        </div>
+                        <div class="bsc-tbl-cds" id="result">
                             <table class="table table-condensed">
                                 <thead>
                                     <tr>
@@ -64,7 +66,46 @@
                                     <?php endforeach?>
                                     
                                 </tbody>
-                            </table>
+                            </table>  
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+<!-- <script>
+$(document).ready(function(){
+
+    load_data();
+
+    function load_data(query)
+    {
+        $.ajax({
+            url:"<?php echo base_url(); ?>donatori/fetch",
+            method:"POST",
+            data:{query:query},
+            success:function(data){
+                $('#result').html(data);
+            }
+        })
+    }
+
+    $('#search_text').keyup(function(){
+        var search = $(this).val();
+        if(search != '')
+        {
+            load_data(search);
+        }
+        else
+        {
+            load_data();
+        }
+    });
+
+});
+</script> -->

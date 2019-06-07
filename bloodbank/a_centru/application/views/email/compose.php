@@ -104,7 +104,7 @@
                         </div>
 
                         <div class="compose-ml col-md-3">
-                            <a class="btn" href="">Trimite</a>
+                            <a class="btn" href="<?php echo base_url('email/sendEmail')?>">Trimite</a>
                         </div>
            
                     </div>

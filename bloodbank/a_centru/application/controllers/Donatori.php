@@ -183,4 +183,84 @@ class Donatori extends CI_Controller {
 		redirect('donatori/in_donors','refresh');
 	}
 
+	public function skeyword()
+	{
+		$key=$this ->input->post('don_key');
+		
+
+		$data = array(
+			
+			//'donatori'=> $this->donatori_m->get_donatori_activi(),
+			'd'=> $this->donatori_m->get_carnete_donatori(),
+			'donatori'=> $this->donatori_m->search($key),
+			
+		);
+
+		//echo "data: <pre>".print_r($data,true)."</pre>";
+
+
+		$this->load->view('layout/header');
+		$this->load->view('layout/navbar');
+		$this->load->view('table/active-donors-table',$data);
+		$this->load->view('layout/footer');
+	
+	}
+
+
+	// function fetch()
+ // 	{
+ //  		$output = '';
+ //  		$query = '';
+ //  		$this->load->model('donatori_m');
+ //  		if($this->input->post('query'))
+ //  		{
+ //   			$query = $this->input->post('query');
+ //  		}
+ //  		$data = $this->donatori_m->fetch_data($query);
+ //  		$output .= '
+ //  			<table class="table table-condensed">
+ //                <thead>
+ //                    <tr>
+ //                        <th>Nume</th>
+ //                        <th>Prenume</th>
+ //                        <th>Grupa Sanguină</th>
+ //                        <th>Rh</th>
+ //                        <th>Data ultimei donări</th>
+ //                        <th>Chestionarul donatorului</th>
+ //                        <th>Carnetul donatorului</th>
+ //                        <th>A donat Acum </th>
+ //                     </tr>
+ //                 </thead>
+ //                 <tbody>
+ //  		';
+ //  		if($data->num_rows() > 0)
+ //  		{
+ //   			foreach($data->result() as $row)
+ //   			{
+ //    			$output .= '
+ //      			<tr>
+ //      			<td>'.$row->nume.'</td>
+ //                <td>'.$row->prenume.'</td>
+ //                <td>'.$row->grupa_sanguina.'</td>
+ //                <td>'.$row->rh.'</td>
+                
+
+
+
+                                                 
+ //    			';
+ //   			}
+ //  		}
+ //  		else
+ //  		{
+ //   			$output .= '<tr>
+ //       		<td colspan="5">No Data Found</td>
+ //     		 </tr>';
+ //  		}
+ //  		$output .= '</table>';
+ //  		echo $output;
+ // 	}
+
+
+
 }

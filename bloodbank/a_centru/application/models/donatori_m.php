@@ -136,4 +136,34 @@ class donatori_m extends CI_Model {
 
 	}
 
+	 function search($key)
+	{
+		$this->db->where('activ','2');
+		$this->db->like('nume', $key);
+		$this->db->or_like('prenume', $key);
+		$this->db->or_like('grupa_sanguina', $key);
+
+		
+		
+
+		$query=$this->db->get('donatori');
+		return $query->result();
+	}
+
+
+	// function fetch_data($query)
+ // 	{
+ //  		$this->db->select("*");
+ //  		$this->db->from("donatori");
+ //  		if($query != '')
+ //  		{
+ //   			$this->db->like('nume', $query);
+ //   			$this->db->or_like('prenume', $query);
+ //   			$this->db->or_like('adresa', $query);
+ //   			$this->db->or_like('localitate', $query);
+ //  		}
+ //  		return $this->db->get();
+ // 	}
+
+
 	}

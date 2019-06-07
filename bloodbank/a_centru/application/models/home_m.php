@@ -185,12 +185,23 @@ class home_m extends CI_Model {
 	}
 
 
-	public function search($key)
+	public function search_d($key)
 	{
 		$this->db->like('cnp', $key);
 		
 
 		$query=$this->db->get('carnetul_donatorului');
+		return $query->result();
+	}
+
+	public function search_p($key)
+	{
+		$this->db->like('nume', $key);
+		$this->db->or_like('prenume', $key);
+
+		
+
+		$query=$this->db->get('pacienti');
 		return $query->result();
 	}
 

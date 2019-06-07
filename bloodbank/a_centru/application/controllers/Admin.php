@@ -10,6 +10,8 @@ class Admin extends CI_Controller {
 		$this->load->model('home_m');
 		$this->load->model('eveniment_m');
 		$this->load->model('donatori_m');
+		$this->load->model('pacienti_m');
+
 
 
 		if(!$this->session->userdata('logged_in') || !$this->session->userdata('admin_logged_in')){
@@ -49,9 +51,9 @@ class Admin extends CI_Controller {
 		$this->load->view('layout/footer');
 	}
 
-	public function skeyword()
+	public function d_skeyword()
 	{
-		$key=$this ->input->post('key');
+		$key=$this ->input->post('d_key');
 		
 
 		$data = array(
@@ -60,7 +62,7 @@ class Admin extends CI_Controller {
 			'd_i'=> $this->donatori_m->get_donatori_in_astetare(),
 			'd_r'=> $this->donatori_m->get_donatori_respinsi(),
 
-			'donatori'=> $this->home_m->search($key),
+			'donatori'=> $this->home_m->search_d($key),
 			
 		);
 		
@@ -69,6 +71,27 @@ class Admin extends CI_Controller {
 		$this->load->view('layout/header');
 		$this->load->view('layout/navbar');
 		$this->load->view('donator',$data);
+		$this->load->view('layout/footer');
+	
+	}
+
+	public function p_skeyword()
+	{
+		$key=$this ->input->post('p_key');
+		
+
+		$data = array(
+			
+			//'pacienti' => $this->pacienti_m->get_pacienti_activi(), 
+			'pacienti'=> $this->home_m->search_p($key),
+			
+		);
+		
+		//echo "data: <pre>".print_r($data,true)."</pre>";
+
+		$this->load->view('layout/header');
+		$this->load->view('layout/navbar');
+		$this->load->view('table/patient-table',$data);
 		$this->load->view('layout/footer');
 	
 	}

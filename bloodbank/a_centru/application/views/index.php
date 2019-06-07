@@ -411,15 +411,28 @@
                 <div class="col-md-4">
                     <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
                         <div class="rc-it-ltd">
-                            <div class="recent-items-ctn">
+                            <div class="recent-items-ctn" style="padding-top: 20px;">
                                 <div class="recent-items-title">
                                     <h2>Căutare Donatori:</h2>
                                 </div>
                             </div>
                             <div class="recent-items-inn">
                                 <div >
-                                    <form method="post" action="<?php echo base_url('admin/skeyword')?>">
-                                        <input type="text" name="key" id="search_box" class="form-control input-lg typeahead" placeholder="caută după CNP" />
+                                    <form method="post" action="<?php echo base_url('admin/d_skeyword')?>">
+                                        <input type="text" name="d_key" id="d_search_box" class="form-control input-lg typeahead" placeholder="caută după CNP" />
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="recent-items-ctn" style="padding-top: 40px; ">
+                                <div class="recent-items-title">
+                                    <h2>Căutare Pacienți:</h2>
+                                </div>
+                            </div>
+                            <div class="recent-items-inn" style="padding-bottom: 10px;">
+                                <div >
+                                    <form method="post" action="<?php echo base_url('admin/p_skeyword')?>">
+                                        <input type="text" name="p_key" id="p_search_box" class="form-control input-lg typeahead" placeholder="caută după Nume sau Prenume" />
                                     </form>
                                 </div>
                             </div>
