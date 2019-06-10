@@ -31,6 +31,7 @@ class Cerere_Primire extends CI_Controller {
 	{
 		$postData = $this->input->post();
 		$this->cpm->cerere_pacient($postData);
+		$this->cpm->send_email_p($postData);
 		redirect('index','refresh');	
 	}
 
@@ -38,6 +39,8 @@ class Cerere_Primire extends CI_Controller {
 	{
 		$postData = $this->input->post();
 		$this->cpm->cerere_spital($postData);
+		$this->cpm->send_email_s($postData);
+
 		redirect('index','refresh');	
 	}
 

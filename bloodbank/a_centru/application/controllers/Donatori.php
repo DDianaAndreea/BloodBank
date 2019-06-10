@@ -83,7 +83,19 @@ class Donatori extends CI_Controller {
 	public function delete_donator()
 	{
 		$id=$this->uri->segment(3);
+		
+		$nume = $this->donatori_m->get_nume_donator($id); 
+		$prenume = $this->donatori_m->get_prenume_donator($id); 
+		$email = $this->donatori_m->get_email_donator($id); 
+
+		 // echo "nume: <pre>".print_r($nume,true)."</pre>";
+		 // echo "pre: <pre>".print_r($prenume,true)."</pre>";
+		 // echo "e: <pre>".print_r($email,true)."</pre>";
+
+		$this->donatori_m->send_email_delete($nume,$prenume,$email);
+
 		$this->donatori_m->delete($id);
+
 
 		redirect('donatori/cereri_donatori','refresh');
 
@@ -91,6 +103,12 @@ class Donatori extends CI_Controller {
 
 	public function in_asteptare(){
 		$id=$this->uri->segment(3);
+		$nume = $this->donatori_m->get_nume_donator($id); 
+		$prenume = $this->donatori_m->get_prenume_donator($id); 
+		$email = $this->donatori_m->get_email_donator($id);
+
+		$this->donatori_m->send_email_in_asteptare($nume,$prenume,$email);
+
 		$this->donatori_m->in_asteptare($id);
 
 		redirect('donatori/in_donors','refresh');

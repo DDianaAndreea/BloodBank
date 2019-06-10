@@ -230,7 +230,7 @@
 
 
 
-                            <li class="nav-item"><a href="<?php echo base_url('logout') ?>" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class=" fa fa-sign-out-alt"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>2</span></div></a>
+                            <li class="nav-item"><a href="<?php echo base_url('logout') ?>" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class=" fa fa-sign-out-alt"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>Log out</span></div></a>
 
 
                         </ul>

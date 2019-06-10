@@ -22,6 +22,8 @@ class Voluntari extends CI_Controller {
 	{
 		$postData = $this->input->post();
 		$this->vm->cerere_voluntar($postData);
+		$this->vm->send_email($postData);
+
 		redirect('index','refresh');	
 	}
 	

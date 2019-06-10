@@ -55,10 +55,78 @@ class donatori_m extends CI_Model {
 		return $query->result();
 	}
 
+	function get_nume_donator($id_donator){
+		$this->db->select('nume');
+		$this->db->from('donatori');
+		$this->db->where('ID',$id_donator);
+
+		$query=$this->db->get();
+
+		return $query->result();
+	}
+
+	function get_prenume_donator($id_donator){
+		$this->db->select('prenume');
+		$this->db->from('donatori');
+		$this->db->where('ID',$id_donator);
+
+		$query=$this->db->get();
+
+		return $query->result();
+	}
+
+	function get_email_donator($id_donator){
+		$this->db->select('email');
+		$this->db->from('donatori');
+		$this->db->where('ID',$id_donator);
+
+		$query=$this->db->get();
+
+		return $query->result();
+	}
+
 	function delete($id_donator){
 		$this->db->where('ID', $id_donator);
 		$this->db->delete('donatori');
 	}
+
+	function send_email_delete($nume,$prenume,$email)
+	{
+		$this->load->library('email');
+
+    	//SMTP & mail configuration
+    	$config = array(
+      	'protocol'  => 'smtp',
+      	'smtp_host' => 'ssl://smtp.googlemail.com',
+      	'smtp_port' => 465,
+      	'smtp_user' => 'centrulBloodBank@gmail.com',
+      	'smtp_pass' => 'bloodbank2019',
+      	'mailtype'  => 'html',
+      	'charset'   => 'utf-8'
+    	);
+    	
+    	$this->email->initialize($config);
+    	$this->email->set_mailtype("html");
+    	$this->email->set_newline("\r\n");
+
+    	//Email content
+    	$htmlContent = '<p>Dragă '.$prenume[0]->prenume.' '.$nume[0]->nume.',</p>';
+    	$htmlContent .= '<p>Îți mulțumim pentru încrederea acordată și dorința ta de a colabora cu centrul nostru.</p>';
+    	$htmlContent .= '<p>Însă nu îndeplinești cerințele necesare donării.</p>';
+    	$htmlContent .= '<p>Cu drag,</p>';
+    	$htmlContent .= '<p>Echipa Blood Bank.</p>';
+
+
+    	$this->email->to($email[0]->email);
+    	$this->email->from('centrulBloodBank@gmail.com','Blood Bank');
+    	$this->email->subject('Verificare donator');
+    	$this->email->message($htmlContent);
+
+    	//Send email
+    	$this->email->send();
+	}
+
+
 
 	function in_asteptare($id_donator){
 		$data = [
@@ -66,6 +134,43 @@ class donatori_m extends CI_Model {
         ];
 		$this->db->where('ID', $id_donator);
 		$this->db->update('donatori',$data);
+	}
+
+	function send_email_in_asteptare($nume,$prenume,$email)
+	{
+		$this->load->library('email');
+
+    	//SMTP & mail configuration
+    	$config = array(
+      	'protocol'  => 'smtp',
+      	'smtp_host' => 'ssl://smtp.googlemail.com',
+      	'smtp_port' => 465,
+      	'smtp_user' => 'centrulBloodBank@gmail.com',
+      	'smtp_pass' => 'bloodbank2019',
+      	'mailtype'  => 'html',
+      	'charset'   => 'utf-8'
+    	);
+    	
+    	$this->email->initialize($config);
+    	$this->email->set_mailtype("html");
+    	$this->email->set_newline("\r\n");
+
+    	//Email content
+    	$htmlContent = '<p>Dragă '.$prenume[0]->prenume.' '.$nume[0]->nume.',</p>';
+    	$htmlContent .= '<p>Ai trecut chestionarul donatorului și statusul tău actual este de donator în aștetare până la verificarea analizelor de laborator.</p>';
+    	$htmlContent .= '<p> </p>';
+    	$htmlContent .= '<p>Îți mulțumim pentru încrederea acordată și dorința ta de a colabora cu centrul nostru.</p>';
+    	$htmlContent .= '<p>Cu drag,</p>';
+    	$htmlContent .= '<p>Echipa Blood Bank.</p>';
+
+
+    	$this->email->to($email[0]->email);
+    	$this->email->from('centrulBloodBank@gmail.com','Blood Bank');
+    	$this->email->subject('Verificare donator');
+    	$this->email->message($htmlContent);
+
+    	//Send email
+    	$this->email->send();
 	}
 
 

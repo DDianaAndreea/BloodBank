@@ -37,6 +37,9 @@ class Pacienti extends CI_Controller {
 	public function make_active()
 	{
 		$id = $this->uri->segment(3);
+		$email = $this->pacienti_m->get_email_pacient($id); 
+
+		$this->pacienti_m->send_email_ok($email);
 
 		$this->pacienti_m->make_active($id);
 		
@@ -47,6 +50,9 @@ class Pacienti extends CI_Controller {
 	public function delete()
 	{
 		$id=$this->uri->segment(3);
+		$email = $this->pacienti_m->get_email_pacient($id); 
+
+		$this->pacienti_m->send_email_nok($email);
 		$this->pacienti_m->delete($id);
 
 		redirect('pacienti/cereri_pacienti','refresh');

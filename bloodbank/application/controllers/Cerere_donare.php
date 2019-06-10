@@ -36,6 +36,7 @@ class Cerere_Donare extends CI_Controller {
 	{
 		$postData = $this->input->post();
 		$this->cdm->cerere_donator($postData);
+		$this->cdm->send_email($postData);
 		redirect('index','refresh');	
 	}
 
