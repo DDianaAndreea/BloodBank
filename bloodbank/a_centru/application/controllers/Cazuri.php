@@ -7,14 +7,18 @@ class Cazuri extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('cazuri_m');
+		$this->load->model('email_m');
+
 
 	}
 	
 	public function index(){
 		$data = array(
-			'cazuri' =>$this->cazuri_m->get_info_cazuri()
+			'cazuri' =>$this->cazuri_m->get_info_cazuri(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/cases-table',$data);
 		$this->load->view('layout/footer');
@@ -24,10 +28,12 @@ class Cazuri extends CI_Controller {
 		$id=$this->uri->segment(3);
 
 		$data = array(
-			'pacienti' =>$this->cazuri_m->get_info_pacient($id)
+			'pacienti' =>$this->cazuri_m->get_info_pacient($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('caz',$data);
 		$this->load->view('layout/footer');

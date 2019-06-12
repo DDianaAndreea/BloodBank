@@ -36,7 +36,8 @@
                         <div class="inbox-status">
                             <ul class="inbox-st-nav inbox-ft">
                                 <li><a href="<?php echo base_url('inbox')?>"><i class="fa fa-envelope"></i> Mesaje primite</a></li>
-                                <li><a href="<?php echo base_url('send')?>"><i class="fa fa-paper-plane"></i> Mesaje trimise</a></li>
+                                <li><a href="<?php echo base_url('email/compose_v')?>"><i class="fa fa-paper-plane"></i> Trimite mesaje <b>voluntarilor</b></a></li>
+                                <li><a href="<?php echo base_url('email/compose_d')?>"><i class="fa fa-paper-plane"></i> Trimite mesaje <b>donatorilor</b></a></li>
                             
                             </ul>
                         </div>

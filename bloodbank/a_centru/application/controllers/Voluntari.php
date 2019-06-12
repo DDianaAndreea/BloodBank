@@ -7,6 +7,8 @@ class Voluntari extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('voluntari_m');
+		$this->load->model('email_m');
+		
 
 	}
 
@@ -14,9 +16,11 @@ class Voluntari extends CI_Controller {
 	{
 		$data = array(
 			'voluntari' => $this->voluntari_m->get_voluntari(), 
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/volunteers-table',$data);
 		$this->load->view('layout/footer');

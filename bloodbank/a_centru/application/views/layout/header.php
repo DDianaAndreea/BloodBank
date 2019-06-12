@@ -76,164 +76,29 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="logo-area">
                         <p class="navbar-brand" >Blood Bank </p>
-                       <!--  <li><a href="<?php echo base_url('logout'); ?>">Logout</a></li> -->
+                        <!-- <li><a href="<?php echo base_url('logout'); ?>">Logout</a></li> -->
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="header-top-menu">
                         <ul class="nav navbar-nav notika-top-nav">
-                            <!-- <li class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-search"></i></span></a>
-                                <div role="menu" class="dropdown-menu search-dd animated flipInX">
-                                    <div class="search-input">
-                                        <i class="notika-icon notika-left-arrow"></i>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                            </li> -->
                             <li class="nav-item dropdown">
-                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="fa fa-envelope"></i></span></a>
-                                <div role="menu" class="dropdown-menu message-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Messages</h2>
-                                    </div>
-                                    <div class="hd-message-info">
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="<?php echo base_url('assets/img/post/1.jpg')?>" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Jonathan Morris</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/4.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Fredric Mitchell</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/1.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Glenn Jecobs</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="hd-mg-va">
-                                        <a href="#">View All</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="fa fa-bell"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>3</span></div></a>
-                                <div role="menu" class="dropdown-menu message-dd notification-dd animated zoomIn">
-                                    <div class="hd-mg-tt">
-                                        <h2>Notification</h2>
-                                    </div>
-                                    <div class="hd-message-info">
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/1.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Jonathan Morris</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/4.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Fredric Mitchell</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/1.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>David Belle</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#">
-                                            <div class="hd-message-sn">
-                                                <div class="hd-message-img">
-                                                    <img src="img/post/2.jpg" alt="" />
-                                                </div>
-                                                <div class="hd-mg-ctn">
-                                                    <h3>Glenn Jecobs</h3>
-                                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="hd-mg-va">
-                                        <a href="#">View All</a>
-                                    </div>
-                                </div>
-                            </li>
+                                <a href="<?php echo base_url('logout'); ?>"><span><i class="fa fa-sign-out"></i></span></a>
+                            </li>       
 
+                        </ul>
 
-
-
-                            <li class="nav-item"><a href="<?php echo base_url('logout') ?>" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class=" fa fa-sign-out-alt"></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span>Log out</span></div></a>
+                        <ul class="nav navbar-nav notika-top-nav">
+                            <li class="nav-item dropdown">
+                                <a href="<?php echo base_url('inbox')?>"><span><i class="fa fa-envelope"></i></span></a>
+                            </li>       
+                            <li class="nav-item"><a href="<?php echo base_url('inbox')?>" ><span><i></i></span><div class="spinner4 spinner-4"></div><div class="ntd-ctn"><span><?php echo $unread_msg ?></span></div></a></li>
+                            
 
 
                         </ul>
+
+                        
                     </div>
                 </div>
             </div>

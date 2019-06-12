@@ -7,6 +7,8 @@ class Evenimente extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('eveniment_m');
+		$this->load->model('email_m');
+
 
 	}
 
@@ -14,9 +16,11 @@ class Evenimente extends CI_Controller {
 	{
 		$data = array(
 			'evenimente' => $this->eveniment_m->get_cereri_evenimente(), 
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('cereri/cereri_eveniment',$data);
 		$this->load->view('layout/footer');
@@ -24,7 +28,12 @@ class Evenimente extends CI_Controller {
 
 	public function creare_eveniment()
 	{
-		$this->load->view('layout/header');
+		$data = array(
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
+		);
+
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('events/creare_eveniment');
 		$this->load->view('layout/footer');
@@ -41,9 +50,11 @@ class Evenimente extends CI_Controller {
   	public function vizualizare_evenimente(){
   		$data = array(
 			'evenimente' => $this->eveniment_m->get_evenimente_active(), 
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('events/evenimente',$data);
 		$this->load->view('layout/footer');
@@ -52,9 +63,11 @@ class Evenimente extends CI_Controller {
   	public function evenimente_in_asteptare(){
   		$data = array(
 			'evenimente' => $this->eveniment_m->get_evenimente_in_asteptare(), 
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('events/evenimente_in_asteptare',$data);
 		$this->load->view('layout/footer');
@@ -64,10 +77,12 @@ class Evenimente extends CI_Controller {
   		$id=$this->uri->segment(3);
 
 		$data = array(
-			'evenimente' =>$this->eveniment_m->get_info_eveniment($id)
+			'evenimente' =>$this->eveniment_m->get_info_eveniment($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('events/editare_eveniment',$data);
 		$this->load->view('layout/footer');

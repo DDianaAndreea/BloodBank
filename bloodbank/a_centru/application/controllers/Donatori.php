@@ -8,6 +8,8 @@ class Donatori extends CI_Controller {
 		parent::__construct();
 		$this->load->model('donatori_m');
 		$this->load->model('stocuri_m');
+		$this->load->model('email_m');
+
 
 	}
 
@@ -17,10 +19,12 @@ class Donatori extends CI_Controller {
 			
 			'donatori'=> $this->donatori_m->get_donatori_activi(),
 			'd'=> $this->donatori_m->get_carnete_donatori(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 			
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/active-donors-table',$data);
 		$this->load->view('layout/footer');
@@ -31,9 +35,11 @@ class Donatori extends CI_Controller {
 		$data = array(
 			
 			'donatori'=> $this->donatori_m->get_donatori_in_astetare(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/inactive-donors-table',$data);
 		$this->load->view('layout/footer');
@@ -43,9 +49,11 @@ class Donatori extends CI_Controller {
 		$data = array(
 			
 			'donatori'=> $this->donatori_m->get_donatori_respinsi(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/rejected-donors-table',$data);
 		$this->load->view('layout/footer');
@@ -57,9 +65,11 @@ class Donatori extends CI_Controller {
 		$data = array(
 			
 			'donatori'=> $this->donatori_m->get_cereri_donatori(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('cereri/cereri_donatori',$data);
 		$this->load->view('layout/footer');
@@ -70,11 +80,13 @@ class Donatori extends CI_Controller {
 
 		$data = array(
 			'donatori' =>$this->donatori_m->get_info_donator($id),
-			'carnet' =>$this->donatori_m->get_info_carnet($id)
+			'carnet' =>$this->donatori_m->get_info_carnet($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 		
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('chestionar',$data);
 		$this->load->view('layout/footer');
@@ -116,6 +128,12 @@ class Donatori extends CI_Controller {
 
 	public function activare(){
 		$id=$this->uri->segment(3);
+		$nume = $this->donatori_m->get_nume_donator($id); 
+		$prenume = $this->donatori_m->get_prenume_donator($id); 
+		$email = $this->donatori_m->get_email_donator($id);
+
+		$this->donatori_m->send_email_activare($nume,$prenume,$email);
+
 		$this->donatori_m->activare($id);
 
 		redirect('donatori/in_donors','refresh');
@@ -123,7 +141,14 @@ class Donatori extends CI_Controller {
 
 	public function donator_respins(){
 		$id=$this->uri->segment(3);
+		$nume = $this->donatori_m->get_nume_donator($id); 
+		$prenume = $this->donatori_m->get_prenume_donator($id); 
+		$email = $this->donatori_m->get_email_donator($id);
+
+		$this->donatori_m->send_email_respingere($nume,$prenume,$email);
+
 		$this->donatori_m->donator_respins($id);
+
 
 		redirect('donatori/in_donors','refresh');
 	}
@@ -141,11 +166,13 @@ class Donatori extends CI_Controller {
 
 		$data = array(
 			'donatori' =>$this->donatori_m->get_info_donator($id),
-			'carnet' =>$this->donatori_m->get_info_carnet($id)
+			'carnet' =>$this->donatori_m->get_info_carnet($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 		
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('carnetul_donatorului',$data);
 		$this->load->view('layout/footer');
@@ -156,8 +183,15 @@ class Donatori extends CI_Controller {
 		$id=$this->uri->segment(3);
 		$grupa=$this->uri->segment(4);
 		$rh=$this->uri->segment(5);
+		$email=$this->donatori_m->get_email_donator($id);
+		$nume=$this->donatori_m->get_nume_donator($id);
+		$prenume=$this->donatori_m->get_prenume_donator($id);
+
 		
+		$this->donatori_m->send_email_donare($email,$nume,$prenume);
+
 		$this->donatori_m->donare_azi($id);
+
 
 		$cantitate_res = $this->stocuri_m->get_cantitate($grupa, $rh);
 
@@ -175,6 +209,13 @@ class Donatori extends CI_Controller {
 		$id=$this->uri->segment(3);
 		$grupa=$this->uri->segment(4);
 		$rh=$this->uri->segment(5);
+
+		$email=$this->donatori_m->get_email_donator($id);
+		$nume=$this->donatori_m->get_nume_donator($id);
+		$prenume=$this->donatori_m->get_prenume_donator($id);
+
+		
+		$this->donatori_m->send_email_donare($email,$nume,$prenume);
 		
 		$this->donatori_m->donare_azi($id);
 
@@ -211,13 +252,15 @@ class Donatori extends CI_Controller {
 			//'donatori'=> $this->donatori_m->get_donatori_activi(),
 			'd'=> $this->donatori_m->get_carnete_donatori(),
 			'donatori'=> $this->donatori_m->search($key),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 			
 		);
 
 		//echo "data: <pre>".print_r($data,true)."</pre>";
 
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/active-donors-table',$data);
 		$this->load->view('layout/footer');

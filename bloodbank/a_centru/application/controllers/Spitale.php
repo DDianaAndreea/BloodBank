@@ -8,6 +8,8 @@ class Spitale extends CI_Controller {
 		parent::__construct();
 		$this->load->model('spitale_m');
 		$this->load->model('stocuri_m');
+		$this->load->model('email_m');
+
 
 
 	}
@@ -17,11 +19,13 @@ class Spitale extends CI_Controller {
 		$data = array(
 			'spitale' => $this->spitale_m->get_spitale_active(), 
 			'stocuri'=>$this->stocuri_m->get_stoc(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
 		 //echo "stocuri: <pre>".print_r($data['stoc'],true)."</pre>";
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/hospitals-table',$data);
 		$this->load->view('layout/footer');
@@ -32,9 +36,11 @@ class Spitale extends CI_Controller {
 
 		$data = array(
 			'spitale'=> $this->spitale_m->get_cereri_spitale(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('cereri/cereri_spitale',$data);
 		$this->load->view('layout/footer');

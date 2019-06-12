@@ -8,6 +8,7 @@ class Admin extends CI_Controller {
 		parent::__construct();
 		$this->load->model('auth_m');
 		$this->load->model('home_m');
+		$this->load->model('email_m');
 		$this->load->model('eveniment_m');
 		$this->load->model('donatori_m');
 		$this->load->model('pacienti_m');
@@ -40,12 +41,14 @@ class Admin extends CI_Controller {
 			'donatori_cu_grupa_A'=> $this->home_m->get_nr_d_A(),
 			'donatori_cu_grupa_B'=> $this->home_m->get_nr_d_B(),
 			'donatori_cu_grupa_AB'=> $this->home_m->get_nr_d_AB(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 
 		);
 
 		 //echo "data: <pre>".print_r($data['pacienti_in_asteptare'],true)."</pre>";
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('index',$data);
 		$this->load->view('layout/footer');
@@ -63,12 +66,14 @@ class Admin extends CI_Controller {
 			'd_r'=> $this->donatori_m->get_donatori_respinsi(),
 
 			'donatori'=> $this->home_m->search_d($key),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 			
 		);
 		
 		//echo "data: <pre>".print_r($data,true)."</pre>";
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('donator',$data);
 		$this->load->view('layout/footer');
@@ -84,12 +89,13 @@ class Admin extends CI_Controller {
 			
 			//'pacienti' => $this->pacienti_m->get_pacienti_activi(), 
 			'pacienti'=> $this->home_m->search_p($key),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
 			
 		);
 		
 		//echo "data: <pre>".print_r($data,true)."</pre>";
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/patient-table',$data);
 		$this->load->view('layout/footer');

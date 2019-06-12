@@ -7,6 +7,7 @@ class Pacienti extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('pacienti_m');
+		$this->load->model('email_m');
 
 	}
 
@@ -14,8 +15,10 @@ class Pacienti extends CI_Controller {
 	{
 		$data = array(
 			'pacienti' => $this->pacienti_m->get_pacienti_activi(), 
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('table/patient-table',$data);
 		$this->load->view('layout/footer');
@@ -26,9 +29,11 @@ class Pacienti extends CI_Controller {
 		$data = array(
 			
 			'pacienti'=> $this->pacienti_m->get_cereri_pacienti(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('cereri/cereri_pacienti',$data);
 		$this->load->view('layout/footer');
@@ -63,11 +68,12 @@ class Pacienti extends CI_Controller {
 		$id=$this->uri->segment(3);
 
 		$data = array(
-			'pacienti' =>$this->pacienti_m->get_info_pacient($id)
+			'pacienti' =>$this->pacienti_m->get_info_pacient($id),
+
 		);
 		
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('pacient',$data);
 		$this->load->view('layout/footer');

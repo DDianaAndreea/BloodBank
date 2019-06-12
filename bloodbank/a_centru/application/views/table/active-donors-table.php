@@ -48,13 +48,14 @@
                                 <tbody>
                                     <?php foreach($donatori as $donator):?>
                                     <tr>
+                                        <?php if ($donator->activ=='2'):?>
                                         <td><?php echo $donator->nume?></td>
                                         <td><?php echo $donator->prenume?></td>
                                         <td><?php echo $donator->grupa_sanguina?></td>
                                         <td><?php echo $donator->rh?></td>
                                         <td><?php foreach($d as $donator_carnet):?>
                                                 <?php if ($donator->ID== $donator_carnet->id): ?>
-                                                    <?php echo $donator_carnet->data_ultimei_donari?>
+                                                    <?php echo date("d M-y",strtotime($donator_carnet->data_ultimei_donari))?>
                                                 <?php endif?>
                                             <?php endforeach?></td>
                                         
@@ -62,6 +63,7 @@
                                         <td><a class="fa fa-id-card btn" style="color:#8B0000" href="<?php echo base_url('donatori/carnetul_donatorului/'.$donator->ID)?>"></a> </td>
                                         <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('donatori/donare_azi/'.$donator->ID.'/'.$donator->grupa_sanguina.'/'.$donator->rh) ?>"> </a>
                                             </td>
+                                            <?php endif?>
                                     </tr>
                                     <?php endforeach?>
                                     

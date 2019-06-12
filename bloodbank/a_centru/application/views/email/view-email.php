@@ -35,8 +35,9 @@
                         </div>
                         <div class="inbox-status">
                             <ul class="inbox-st-nav inbox-ft">
-                                <li><a href="<?php echo base_url('inbox')?>"><i class="fa fa-envelope"></i> Mesaje primite</a></li>
-                                <li><a href="<?php echo base_url('send')?>"><i class="fa fa-paper-plane"></i> Mesaje trimise</a></li>
+                               <li><a href="<?php echo base_url('inbox')?>"><i class="fa fa-envelope"></i> Mesaje primite</a></li>
+                                <li><a href="<?php echo base_url('email/compose_v')?>"><i class="fa fa-paper-plane"></i> Trimite mesaje <b>voluntarilor</b></a></li>
+                                <li><a href="<?php echo base_url('email/compose_d')?>"><i class="fa fa-paper-plane"></i> Trimite mesaje <b>donatorilor</b></a></li>
                              
                             </ul>
                         </div>
@@ -50,28 +51,22 @@
                             <div class="view-mail-hrd">
                                 <h2>Email </h2>
                             </div>
-                            <div class="view-ml-rl">
-                                <p>08:26 PM </p>
-                            </div>
+                            
                         </div>
                         <div class="mail-ads mail-vw-ph">
-                            <p class="first-ph"><b>Subiect: </b>Lorem Ipsum has been the industry's standard dummy text ever</p>
-                            <p><b>Email:</b> <a href="#">example.@email.com</a></p>
-                            <p class="last-ph"><b>Data:</b> 15.03.2018</p>
+                            <p ><b>De la:</b> <?php echo $mesaj[0]->prenume?> <?php echo $mesaj[0]->nume?></p>
+                            <p><b>Email:</b> <a href="<?php echo base_url('email/response/'.$mesaj[0]->ID)?>"> <?php echo $mesaj[0]->email?></a></p>
+                            <p class="last-ph"><b>Data:</b> <?php echo date("d M y",strtotime($mesaj[0]->data))?> , <?php echo date("H:i",strtotime($mesaj[0]->data))?></p>
                         </div>
                         <div class="view-mail-atn">
-                            <h2>Hello Mamunur Roshid!</h2>
-                            <p>Dummy text of the printing and typesetting industry. Lorem Ipsum has been the <b>dustrys standard dummy text</b> ever since the 1500s, when an unknown printer took a galley of types and scrambleded it to make a type specimenen book. It hasn survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. when an unknown printer took a galley of types and scrambleded it to make a type specimenen book. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages <a href="#">Read more</a>.</p>
-                            <p>All the Lorem Ipsum generators on the Internet tend to repeat the predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence crisity structures, to generate Lorem Ipsum which looks reasonable. recently with.Dummy text of the printing and typesetting industryunknown printer took a galley of type. when an unknown printer took a galley of types and scrambleded it's stambanner to make a type specimenen book.survived not only five centuries, but also the leap into the electronic typesetting, remaining essentially unchanged.</p>
-                            <span class="vw-tr">Thanks and Regards</span>
-                            <span>Mark Smith</span>
+                            <p><?php echo $mesaj[0]->mesaj?>
+                            </p>
                         </div>
                  
                         <div class="vw-ml-action-ls text-right mg-t-20">
                             <div class="btn-group ib-btn-gp active-hook nk-email-inbox">
-                                <button class="btn btn-default btn-sm waves-effect"><i class="fa fa-reply"></i> Raspunde</button>
-                                <button class="btn btn-default btn-sm waves-effect"><i class="fa fa-arrow-right"></i> Redirectioneaza</button>
-                                <button class="btn btn-default btn-sm waves-effect"><i class="fa fa-trash"></i> Sterge</button>
+                                <a href="<?php echo base_url('email/response/'.$mesaj[0]->ID)?>"><button class="btn btn-default btn-sm waves-effect"><i class="fa fa-reply"></i> Raspunde</button></a>
+                                <a href="<?php echo base_url('email/delete_msg/'.$mesaj[0]->ID)?>"><button class="btn btn-default btn-sm waves-effect" ><i class="fa fa-trash"></i> Sterge</button></a>
                             </div>
                         </div>
                     </div>

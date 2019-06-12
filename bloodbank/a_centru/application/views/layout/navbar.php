@@ -124,9 +124,9 @@
                     <div class="tab-content custom-menu-content">
                         <div id="Home" class="tab-pane   notika-tab-menu-bg animated flipInX" >
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="<?php echo base_url('dashboard')?>">Home</a>
+                                <li><a href="<?php echo base_url('dashboard')?>">Pagina principală</a>
                                 </li>
-                                <li><a href="<?php echo base_url('stoc')?>">Stoc</a>
+                                <li><a href="<?php echo base_url('stoc')?>">Stocuri</a>
                                 </li>
                             </ul>
                         </div>
@@ -134,12 +134,9 @@
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="<?php echo base_url('inbox')?>">Mesaje primite</a>
                                 </li>
-                                <li><a href="<?php echo base_url('send')?>">Mesaje trimise </a>
-                                </li>
                                 <li><a href="<?php echo base_url('compose')?>">Compune</a>
                                 </li>
-                                <li><a href="<?php echo base_url('view')?>">View</a>
-                                </li>
+                                
                             </ul>
                         </div>
                         <div id="cereri" class="tab-pane notika-tab-menu-bg animated flipInX">
@@ -176,9 +173,9 @@
                             <ul class="notika-main-menu-dropdown">
                                 <li><a href="<?php echo base_url('creare_eveniment')?>">Creare</a>
                                 </li>
-                                <li><a href="<?php echo base_url('evenimente')?>">Vizualizare</a>
+                                <li><a href="<?php echo base_url('evenimente')?>">Campanii active</a>
                                 </li>
-                                <li><a href="<?php echo base_url('evenimente_in_asteptare')?>">În ațteptare</a>
+                                <li><a href="<?php echo base_url('evenimente_in_asteptare')?>">În așteptare</a>
                                 </li>
                             </ul>
                         </div>

@@ -14,68 +14,179 @@ class Email extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('layout/header');
+		$data = array(
+			
+			'mesaje'=> $this->email_m->get_mesaje(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+		);
+
+		
+
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
-		$this->load->view('email/inbox');
+		$this->load->view('email/inbox',$data);
 		$this->load->view('layout/footer');
 	}
 
-		public function compose()
+	public function compose()
 	{
-		$this->load->view('layout/header');
+		$data = array(
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+		);
+
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('email/compose');
 		$this->load->view('layout/footer');
 	}
 
-		public function send()
+	public function compose_v()
 	{
-		$this->load->view('layout/header');
+		$data = array(
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+		);
+
+		$this->load->view('layout/header',$data);
+		$this->load->view('layout/navbar');
+		$this->load->view('email/compose_v');
+		$this->load->view('layout/footer');
+	}
+
+	public function compose_d()
+	{
+		$data = array(
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+		);
+
+		$this->load->view('layout/header',$data);
+		$this->load->view('layout/navbar');
+		$this->load->view('email/compose_d');
+		$this->load->view('layout/footer');
+	}
+
+	public function response()
+	{
+		$id=$this->uri->segment(3);
+		$data = array(
+			
+			'mesaj'=> $this->email_m->get_mesaj($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
+		);
+		$this->load->view('layout/header',$data);
+		$this->load->view('layout/navbar');
+		$this->load->view('email/response',$data);
+		$this->load->view('layout/footer');
+	}
+
+	public function send()
+	{
+		$data = array(
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+		);
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('email/send-email');
 		$this->load->view('layout/footer');
 	}
 
-		public function view()
+	public function view()
 	{
-		$this->load->view('layout/header');
+		$id=$this->uri->segment(3);
+
+		$data = array(
+			
+			'mesaj'=> $this->email_m->get_mesaj($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
+		);
+		//echo "<pre>".print_r($data,true)."</pre>";
+
+		$this->email_m->read_msg($id);
+
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
-		$this->load->view('email/view-email');
+		$this->load->view('email/view-email',$data);
 		$this->load->view('layout/footer');
 	}
 
 	public function sendEmail()
-  {
-    //Load email library
-    $this->load->library('email');
+ 	{
+    	$postData = $this->input->post();
 
-    //SMTP & mail configuration
-    $config = array(
-      'protocol'  => 'smtp',
-      'smtp_host' => 'ssl://smtp.googlemail.com',
-      'smtp_port' => 465,
-      'smtp_user' => 'dyusk.96@gmail.com',
-      'smtp_pass' => 'JeffDia23',
-      'mailtype'  => 'html',
-      'charset'   => 'utf-8'
-    );
-    $this->email->initialize($config);
-    $this->email->set_mailtype("html");
-    $this->email->set_newline("\r\n");
+	//echo "<pre>".print_r($postData,true)."</pre>";
 
-    //Email content
-    $htmlContent = '<h1>Te iubesc</h1>';
-    $htmlContent .= '<p>Scuze daca am tipat la tine...stii ca te iubi... <3 :* :* :*</p>';
+    	$email=$postData['email'];
+    	$subiect=$postData['subiect'];
+    	$mesaj=$postData['mesaj'];
+	
+	//echo "<pre>".print_r($mesaj,true)."</pre>";
 
-    $this->email->to('dyusk_96@yahoo.com');
-    $this->email->from('dyusk.96@gmail.com','your love');
-    $this->email->subject('sorry');
-    $this->email->message($htmlContent);
+    	$this->email_m->sendEmail($email,$subiect,$mesaj);
 
-    //Send email
-    $this->email->send();
+		redirect('email/index','refresh');
+	}
 
-  }
+	public function sendEmail_v()
+ 	{
+    	$postData = $this->input->post();
+
+    	$subiect=$postData['subiect'];
+    	$mesaj=$postData['mesaj'];
+
+    	$emails=$this->email_m->get_email_voluntari();
+	
+		// echo "<pre>".print_r($emails,true)."</pre>";
+		// echo "<pre>".print_r($subiect,true)."</pre>";
+		// echo "<pre>".print_r($mesaj,true)."</pre>";
+		foreach ($emails as $email) {
+    		$this->email_m->sendEmail($email->email,$subiect,$mesaj);
+		}
+
+		redirect('email/index','refresh');
+	}
+
+		public function sendEmail_d()
+ 	{
+     	$postData = $this->input->post();
+
+     	$subiect=$postData['subiect'];
+     	$mesaj=$postData['mesaj'];
+     	$grupa=$postData['grupa'];
+     	$rh=$postData['rh'];
+
+		echo "<pre>".print_r($subiect,true)."</pre>";
+		echo "<pre>".print_r($mesaj,true)."</pre>";
+		echo "<pre>".print_r($grupa,true)."</pre>";
+		echo "<pre>".print_r($rh,true)."</pre>";
+
+		if ($grupa!='' && $rh!='') {
+			$emails=$this->email_m->get_email_donatori_activi_($grupa,$rh);
+			foreach ($emails as $email) {
+     			$this->email_m->sendEmail($email->email,$subiect,$mesaj);
+			}
+     		
+			
+		}else{
+			$emails=$this->email_m->get_email_donatori_activi();
+			foreach ($emails as $email) {
+     			$this->email_m->sendEmail($email->email,$subiect,$mesaj);
+			 }
+		}
+		//echo "<pre>".print_r($emails,true)."</pre>";
+
+		redirect('email/index','refresh');
+	}
+
+	public function delete_msg()
+	{
+		$id=$this->uri->segment(3);
+		$this->email_m->delete_msg($id);
+
+		redirect('email/index','refresh');
+	}
+
+	
 
 
 

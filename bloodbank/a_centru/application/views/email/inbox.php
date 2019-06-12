@@ -34,10 +34,10 @@
                         </div>
                         <div class="inbox-status">
                             <ul class="inbox-st-nav inbox-ft">
-                                <li><a href="<?php echo base_url('inbox')?>"><i class="fa fa-envelope"></i> Mesaje primite<span class="pull-right">12</span></a></li>
-                                <li><a href="<?php echo base_url('send')?>"><i class="fa fa-paper-plane"></i> Mesaje trimise</a></li>
-                                <!-- <li><a href="#"><i class="notika-icon notika-draft"></i> Draft</a></li> -->
-                                <!-- <li><a href="#"><i class="notika-icon notika-trash"></i> Trash</a></li> -->
+                                <li><a href="<?php echo base_url('inbox')?>"><i class="fa fa-envelope"></i> Mesaje primite</a></li>
+                                <li><a href="<?php echo base_url('email/compose_v')?>"><i class="fa fa-paper-plane"></i> Trimite mesaje <b>voluntarilor</b></a></li>
+                                <li><a href="<?php echo base_url('email/compose_d')?>"><i class="fa fa-paper-plane"></i> Trimite mesaje <b>donatorilor</b></a></li>
+                               
                             </ul>
                         </div>
                         
@@ -48,115 +48,45 @@
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                     <div class="inbox-text-list sm-res-mg-t-30">
-                        <div class="form-group">
-                            <div class="nk-int-st search-input search-overt">
-                                <input type="text" class="form-control" placeholder="Gasiti mesaje,documente sau persoane" />
-                                <button class="btn search-ib">Cauta</button>
-                            </div>
-                        </div>
                         <div class="inbox-btn-st-ls btn-toolbar">
                             <div class="btn-group ib-btn-gp active-hook nk-email-inbox">
-                                <button class="btn btn-default btn-sm"><i class="fa fa-retweet"></i> Reincarca</button>
-                                <!-- <button class="btn btn-default btn-sm"><i class="notika-icon notika-next"></i></button> -->
-                                <!-- <button class="btn btn-default btn-sm"><i class="notika-icon notika-down-arrow"></i></button> -->
-                                <button class="btn btn-default btn-sm"><i class="fa fa-trash"></i></button>
-                                <!-- <button class="btn btn-default btn-sm"><i class="notika-icon notika-checked"></i></button> -->
-                                <!-- <button class="btn btn-default btn-sm"><i class="notika-icon notika-promos"></i></button> -->
+                                <a href="<?php echo base_url('inbox')?>"><button class="btn btn-default btn-sm" ><i class="fa fa-retweet" ></i> Reincarca</button></a>
+                                
                             </div>
-                            <div class="btn-group ib-btn-gp active-hook nk-act nk-email-inbox">
-                                <button class="btn btn-default btn-sm"><i class="fa fa-arrow-left"></i></button>
-                                <button class="btn btn-default btn-sm"><i class="fa fa-arrow-right"></i></button>
-                            </div>
+                            
                         </div>
                         <div class="table-responsive">
                             <table class="table table-hover table-inbox">
                                 <tbody>
+                                    <?php foreach($mesaje as $mesaj):?>
+                                    <?php if(!$mesaj->stare_email):?>
                                     <tr class="unread">
                                         <td class="">
-                                            <label><input type="checkbox" checked="" class="i-checks"></label>
+                                           <i class="fa fa-envelope"></i>
                                         </td>
-                                        <td><a href="#">Jeremy Massey</a></td>
-                                        <td><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                                        <td><a href="<?php echo base_url('email/view/'.$mesaj->ID)?>"><b><?php echo $mesaj->prenume?> <?php echo $mesaj->nume ?></b></a></td>
+                                        <td><a href="<?php echo base_url('email/view/'.$mesaj->ID)?>"><b><?php echo $mesaj->email?></b></a>
                                         </td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                        <td class="text-right mail-date">Tue, Nov 25</td>
+                                        <td><i></i></td>
+                                        <td class="text-right mail-date"><b><?php echo date("d M",strtotime($mesaj->data))?></b></td>
                                     </tr>
-                                    <tr class="active">
+                                    <?php else:?>
+                                    <tr class="read">
                                         <td class="">
-                                            <label><input type="checkbox" class="i-checks"></label>
+                                           <i class="fa fa-envelope-open">
                                         </td>
-                                        <td><a href="#">Marshall Horne</a></td>
-                                        <td><a href="#">Praesent nec nisl sed neque ornare maximus at ac enim.</a>
+                                        <td><a href="<?php echo base_url('email/view/'.$mesaj->ID)?>"><?php echo $mesaj->prenume?> <?php echo $mesaj->nume ?></a></td>
+                                        <td><a href="<?php echo base_url('email/view/'.$mesaj->ID)?>"><?php echo $mesaj->email?></a>
                                         </td>
-                                        <td></td>
-                                        <td class="text-right mail-date">Wed, Jan 13</td>
+                                        <td><i></i></td>
+                                        <td class="text-right mail-date"><?php echo date("d M",strtotime($mesaj->data))?></td>
                                     </tr>
-                                    <tr>
-                                        <td class="">
-                                            <label><input type="checkbox" class="i-checks"></label>
-                                        </td>
-                                        <td><a href="#">Grant Franco</a> </td>
-                                        <td><a href="#">Etiam maximus tellus a turpis tempor mollis.</a></td>
-                                        <td></td>
-                                        <td class="text-right mail-date">Mon, Oct 19</td>
-                                    </tr>
-                                    <tr class="unread active">
-                                        <td class="">
-                                            <label><input type="checkbox" class="i-checks"></label>
-                                        </td>
-                                        <td><a href="#">Ferdinand Meadows</a></td>
-                                        <td><a href="#">Aenean hendrerit ligula eget augue gravida semper.</a></td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                        <td class="text-right mail-date">Sat, Aug 29</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <label><input type="checkbox" checked="" class="i-checks"></label>
-                                        </td>
-                                        <td><a href="#">Ivor Rios</a> 
-                                        </td>
-                                        <td><a href="#">Sed quis augue in nunc venenatis finibus.</a></td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                        <td class="text-right mail-date">Sat, Dec 12</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <label><input type="checkbox" class="i-checks"></label>
-                                        </td>
-                                        <td><a href="#">Maxwell Murphy</a></td>
-                                        <td><a href="#">Quisque eu tortor quis justo viverra cursus.</a></td>
-                                        <td></td>
-                                        <td class="text-right mail-date">Sun, May 17</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <label><input type="checkbox" class="i-checks"></label>
-                                        </td>
-                                        <td><a href="#">Henry Patterson</a></td>
-                                        <td><a href="#">Aliquam nec justo interdum, ornare mi non, elementum lacus.</a></td>
-                                        <td><i class="fa fa-paperclip"></i></td>
-                                        <td class="text-right mail-date">Thu, Aug 06</td>
-                                    </tr>
-									<tr>
-                                        <td class="">
-                                            <label><input type="checkbox" class="i-checks"></label>
-                                        </td>
-                                        <td><a href="#">Maxwell Murphy</a></td>
-                                        <td><a href="#">Quisque eu tortor quis justo viverra cursus.</a></td>
-                                        <td></td>
-                                        <td class="text-right mail-date">Sun, May 17</td>
-                                    </tr>
+                                <?php endif;?>
+                                    <?php endforeach;?>
+                                    
                                 </tbody>
                             </table>
-                            <div class="pagination-inbox">
-                                <ul class="wizard-nav-ac">
-                                    <li><a class="btn" href="#"><i class="fa fa-arrow-left"></i></a></li>
-                                    <li class="active"><a class="btn" href="#">1</a></li>
-                                    <li><a class="btn" href="#">2</a></li>
-                                    <li><a class="btn" href="#">3</a></li>
-                                    <li><a class="btn" href="#"><i class="fa fa-arrow-right"></i></a></li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

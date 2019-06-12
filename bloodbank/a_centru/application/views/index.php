@@ -154,10 +154,10 @@
 
 <br>
     <!-- Start Statistic area-->
-    <div class="notika-email-post-area">
-        <div class="container">
+    <!-- <div class="notika-email-post-area"> -->
+        <div class="container ">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <div class="email-statis-inner notika-shadow">
                         <div class="email-ctn-round">
                             <div class="email-rdn-hd">
@@ -296,7 +296,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
                         <div class="rc-it-ltd">
                             <div class="recent-items-ctn">
@@ -408,7 +408,7 @@
                     <img style="border-radius: 4px; width: 370px; height: 287px" src="<?php echo base_url('assets/img/grupe-rh.jpg') ?>"/>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
                         <div class="rc-it-ltd">
                             <div class="recent-items-ctn" style="padding-top: 20px;">

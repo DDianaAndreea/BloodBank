@@ -7,6 +7,8 @@ class Stoc extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('stocuri_m');
+		$this->load->model('email_m');
+
 
 	}
 
@@ -20,6 +22,8 @@ class Stoc extends CI_Controller {
 			'grupaB'=> $this->stocuri_m->get_nr_B(),
 			'grupaAB'=> $this->stocuri_m->get_nr_AB(),
 			'stocuri'=>$this->stocuri_m->get_stoc(),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
 		);
 
 		
@@ -28,7 +32,7 @@ class Stoc extends CI_Controller {
 
 		 // echo "	Data: <pre>".print_r($data,true)."</pre>";
 
-		$this->load->view('layout/header');
+		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('stoc/stoc',$data);
 		$this->load->view('layout/footer');
