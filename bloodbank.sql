@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gazdă: 127.0.0.1
--- Timp de generare: iun. 11, 2019 la 09:19 PM
+-- Timp de generare: iun. 15, 2019 la 09:48 PM
 -- Versiune server: 10.1.39-MariaDB
 -- Versiune PHP: 7.3.5
 
@@ -146,15 +146,49 @@ CREATE TABLE `donatori` (
 --
 
 INSERT INTO `donatori` (`ID`, `prenume`, `nume`, `email`, `data_nastere`, `telefon`, `sex`, `rh`, `grupa_sanguina`, `c1`, `c2`, `c3`, `c4`, `c5`, `c6`, `c7`, `c8`, `c9`, `c10`, `c11`, `c12`, `c13`, `c14`, `c15`, `c16`, `c17`, `c18`, `c19`, `c20`, `c21`, `c22`, `c23`, `c24`, `c25`, `c26`, `c27`, `activ`, `data_cererii`) VALUES
-(1, 'Diana-Andreea', 'Dragan', 'dyusk_96@yahoo.com', '1996-08-20', '760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 2, '2019-04-06 12:09:28'),
-(2, 'Octavian', 'Iancu', 'octavian@gmail.com', '1994-02-21', '770506027', 'm', '-', 'A', 'Da', 'Nu', 'Nu', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 1, '2019-04-06 12:27:39'),
-(8, 'Elena', 'Dragan', 'dyusk_96@yahoo.com', '1976-06-05', '0766107379', 'f', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 2, '2019-06-09 13:44:58'),
+(1, 'Diana-Andreea', 'Dragan', 'dyusk_96@yahoo.com', '1996-08-20', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 2, '2019-04-06 12:09:28'),
+(2, 'Octavian', 'Iancu', 'octavian@gmail.com', '1994-02-21', '0770506027', 'm', '-', 'A', 'Da', 'Nu', 'Nu', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 1, '2019-04-06 12:27:39'),
+(8, 'Elena', 'Dragan', 'dragan_diana96@yahoo.com', '1976-06-05', '0766107379', 'f', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 2, '2019-06-09 13:44:58'),
 (9, 'Ionel', 'Dragan', 'ionel_dragan@gmail.com', '1972-05-06', '0760373781', 'm', '+', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-09 13:46:30'),
-(11, 'Diana', 'Dragan', 'dyusk_96@yahoo.com', '1996-08-20', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:26:49'),
-(12, 'Diana', 'Dragan', 'dyusk_96@yahoo.com', '1996-08-20', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:37:32'),
-(13, 'Diana', 'Dragan', 'dyusk_96@yahoo.com', '1996-08-20', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:39:37'),
-(14, 'Diana', 'Dragan', 'dyusk_96@yahoo.com', '1996-08-20', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:39:52'),
-(15, 'Diana', 'Dragan', 'dyusk_96@yahoo.com', '1996-08-20', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:41:20');
+(11, 'Adela', 'Pitur', 'dyusk_96@yahoo.com', '1987-04-22', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:26:49'),
+(12, 'Dan', 'Pitur', 'dan_pitur6@yahoo.com', '1988-07-12', '0760373781', 'm', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:37:32'),
+(13, 'Ion', 'Nedea', 'ion_nedea@yahoo.com', '1971-01-20', '0760373781', 'm', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:39:37'),
+(14, 'Flori', 'Nedea', 'nedea_flori@yahoo.com', '1973-03-21', '0760373781', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:39:52'),
+(15, 'Eugen', 'Dragan', 'dyusk_96@yahoo.com', '1994-02-16', '0760373781', 'm', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-10 12:41:20'),
+(16, 'Dani', 'Dragan', 'dani_dragan@gmail.com', '1983-10-21', '0760000000', 'm', '-', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:25:11'),
+(17, 'Alina', 'Iordache', 'alina_iordache@yahoo.com', '1983-09-25', '0760000000', 'f', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:31:18'),
+(18, 'Daniel', 'Manda', 'manda_daniel@yahoo.com', '1978-03-30', '0760000000', 'm', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:31:18'),
+(19, 'Maria', 'Manda', 'manda_maria@yahoo.com', '1954-06-14', '0760', 'f', '-', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:36:41'),
+(20, 'Teodora', 'Cocos', 'teodora_cocos@yahoo.com', '1996-03-02', '0760000000', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:36:41'),
+(21, 'Talal', 'Husni', 'husni_talal@gmail.com', '1996-10-25', '0760000000', 'm', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:40:05'),
+(22, 'Oana', 'Cirhoata', 'cirhoata_oana@gmail.com', '1996-06-30', '0760000000', 'f', '-', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:40:05'),
+(23, 'Indira', 'Iancu', 'indira_iancu@yahoo.com', '1972-06-06', '0760000000', 'f', '-', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:45:00'),
+(24, 'Giani', 'Iancu', 'giani_iancu@yahoo.com', '1970-01-29', '0760000000', 'm', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:45:00'),
+(25, 'Maria', 'Tanasascu', 'tanaescu_maria@yahoo.com', '1945-07-01', '0760000000', 'f', '+', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:48:45'),
+(26, 'Vasile', 'Tanasescu', 'tanasescu_vasile@yahoo.com', '1946-06-01', '0760000000', 'm', '-', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:48:45'),
+(27, 'Nicoleta', 'Scarlat', 'nicoleta_scarlat@yahoo.com', '1976-06-29', '0760000000', 'f', '+', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:52:22'),
+(28, 'Constantin', 'Scarlat', 'cst_scarlat@yahoo.com', '1969-05-01', '0760000000', 'm', '-', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 14:52:22'),
+(29, 'Cristian', 'Voicu', 'voicu@yahoo.com', '1963-05-15', '0760000000', 'm', '-', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:01:00'),
+(30, 'Ana', 'Smarandescu', 'ana_smara@yahoo.com', '1962-02-12', '0760000000', 'f', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-03 10:16:09'),
+(31, 'Ana-Maria', 'Gheorghe', 'am_gheorghe@yahoo.com', '1992-12-15', '0760000000', 'f', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:05:39'),
+(32, 'Rodica', 'Vochin', 'rodi_vochin@yahoo.com', '1993-01-06', '0760000000', 'f', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:05:39'),
+(33, 'Rodica', 'Vochin', 'rodi_vochin@yahoo.com', '1993-01-06', '0760000000', 'f', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:09:05'),
+(34, 'Ionut', 'Vochin', 'vochin_ionut@yahoo.com', '1990-10-14', '0760000000', 'm', '+', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:09:05'),
+(35, 'Marinel', 'Nicolita', 'nicolita_marinel@yahoo.com', '1990-08-16', '0760000000', 'm', '+', 'AB', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:11:39'),
+(36, 'Iulia', 'Bunea', 'iulia_bunea@yahoo.com', '1996-12-22', '0760000000', 'f', '+', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:11:39'),
+(37, 'Nicolae', 'Stoica', 'nicolae_stoica@yahoo.com', '1994-01-21', '0760000000', 'm', '-', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:15:51'),
+(38, 'Adina', 'Mihai', 'mihai_adina@yahoo.com', '1994-12-20', '0760000000', 'f', '+', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:15:51'),
+(39, 'Adelina', 'Mihai', 'mihai_ade@yahoo.com', '1994-11-19', '0760000000', 'f', '-', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:19:42'),
+(40, 'Mihaela', 'Anda', 'anda_mihaela@yahoo.con', '1994-10-18', '0760000000', 'f', '-', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:19:42'),
+(41, 'Madalina', 'Manda', 'manda_mada@yahoo.com', '1994-09-15', '0760000000', 'f', '+', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:22:22'),
+(42, 'Loredana', 'Marinescu', 'marinescu_lori@yahoo.com', '0000-00-00', '0760000000', 'f', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:22:22'),
+(43, 'Manuel', 'Nae', 'manu_nae@yahoo.com', '1994-06-15', '0760000000', 'm', '+', 'B', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:25:27'),
+(44, 'Stefan', 'Ciupitu', 'ciupitu_stefan@yahoo.com', '1994-07-16', '0760000000', 'm', '+', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:25:27'),
+(45, 'Remus', 'Tatu', 'tatu_remus@yahoo.com', '1994-05-30', '0760000000', 'f', '+', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:28:26'),
+(46, 'Andi', 'Ioana', 'ioana_andi@yahoo.com', '1994-04-12', '0760000000', 'm', '+', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:28:26'),
+(47, 'Daniel', 'Ilina', 'ilinca_daniel@yahoo.com', '1994-03-24', '0760000000', 'm', '+', 'A', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:30:58'),
+(48, 'Tatiana', 'Curiman', 'curiman_tatiana@yahoo.com', '1960-02-23', '0760000000', 'f', '+', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:30:58'),
+(49, 'Alin', 'Anghel\r\n', 'anghel_alin@yahoo.com', '1994-01-12', '0760000000', 'm', '+', '0', 'Da', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 'Nu', 0, '2019-06-15 15:32:33');
 
 -- --------------------------------------------------------
 
@@ -179,7 +213,7 @@ CREATE TABLE `mesaje` (
 INSERT INTO `mesaje` (`ID`, `nume`, `prenume`, `mesaj`, `email`, `stare_email`, `data`) VALUES
 (1, 'Diana-Andreea', 'Andreea', 'eyrfg', 'dyusk_96@yahoo.com', 1, '2019-06-12 10:00:00'),
 (2, 'Iancu', 'Andreea', 'etyrhdtfgj', 'dyusk_96@yahoo.com', 0, '2019-06-09 00:00:00'),
-(3, 'Dragan', 'Andreea', 'Hello', 'diana@yahoo.com', 0, '2019-06-19 00:00:00'),
+(3, 'Dragan', 'Andreea', 'Hello', 'diana@yahoo.com', 1, '2019-06-19 00:00:00'),
 (4, 'Dragan', 'Diana', 'footer', 'dyusk_96@yahoo.com', 1, '2019-06-02 00:00:00');
 
 -- --------------------------------------------------------
@@ -442,7 +476,7 @@ ALTER TABLE `cazuri_publicate`
 -- AUTO_INCREMENT pentru tabele `donatori`
 --
 ALTER TABLE `donatori`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT pentru tabele `mesaje`

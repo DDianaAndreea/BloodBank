@@ -320,8 +320,11 @@
         <div class="row justify-content-center mb-5 element-animate">
           <div class="col-md-8 text-center mb-5">
             <h2 class="text-uppercase heading border-bottom mb-4">Evenimente </h2>
+            
             <p class="mb-0 lead">Donațiile se fac în mod voluntar și neremunerat.Te asteptăm la evenimente atât pentru a dona cat și pentru a afla mai multe detalii despre noi și oamenii care au nevoie de noi.</p>
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://bloodbank.com/create-facebook-share-button-for-website-webpages/&layout=button&size=small&mobile_iframe=true&width=60&height=20&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
+
         </div>
         <div class="row element-animate">
           <div class="major-caousel js-carousel-2 owl-carousel">
@@ -336,6 +339,7 @@
                   <p class="clearfix">
                     <!-- <a href="#" class="float-left text-burg">Read more</a> -->
                     <!-- <a href="#" class="float-right meta-chat"><span class="ion-chatbubble"></span> 8</a> -->
+                    
                   </p>
                 </div>
               </div>
@@ -345,8 +349,10 @@
           
 
           </div>
+
           <!-- END slider -->
         </div>
+
       </div>
     </section>
     <!-- END section -->

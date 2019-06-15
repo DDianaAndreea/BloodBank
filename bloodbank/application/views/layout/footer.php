@@ -57,9 +57,10 @@
             <p><a href="index">www.bloodbank.ro </a></p>
           </div>
           <div class="col-md-6 col-sm-12 text-md-right text-sm-left">
-            <a href="" class="p-2"><span class="fa fa-facebook"></span></a>
-           
+            <!-- <a href="" class="p-2"><span class="fa fa-facebook"></span></a> -->
+           <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://bloodbank.com/create-facebook-share-button-for-website-webpages/&layout=button&size=small&mobile_iframe=true&width=60&height=20&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
+          
         </div>
       </div>
     </footer>
