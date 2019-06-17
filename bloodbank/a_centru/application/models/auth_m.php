@@ -16,14 +16,5 @@ class auth_m extends CI_Model {
 		return $query->result();
 	}
 
-	function admin_login($postData)
-	{
-		$this->db->select('*');
-		$this->db->where('email', $postData['email']);
-		$this->db->where('parola', md5($postData['parola']));
 
-		$query = $this->db->get('personal');
-
-		return $query->result();
-	}
 }

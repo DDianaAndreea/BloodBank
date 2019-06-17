@@ -79,16 +79,6 @@ class Email extends CI_Controller {
 		$this->load->view('layout/footer');
 	}
 
-	public function send()
-	{
-		$data = array(
-			'unread_msg'=>$this->email_m->get_unread_msg(),
-		);
-		$this->load->view('layout/header',$data);
-		$this->load->view('layout/navbar');
-		$this->load->view('email/send-email');
-		$this->load->view('layout/footer');
-	}
 
 	public function view()
 	{
@@ -155,10 +145,10 @@ class Email extends CI_Controller {
      	$grupa=$postData['grupa'];
      	$rh=$postData['rh'];
 
-		echo "<pre>".print_r($subiect,true)."</pre>";
-		echo "<pre>".print_r($mesaj,true)."</pre>";
-		echo "<pre>".print_r($grupa,true)."</pre>";
-		echo "<pre>".print_r($rh,true)."</pre>";
+		// echo "<pre>".print_r($subiect,true)."</pre>";
+		// echo "<pre>".print_r($mesaj,true)."</pre>";
+		// echo "<pre>".print_r($grupa,true)."</pre>";
+		// echo "<pre>".print_r($rh,true)."</pre>";
 
 		if ($grupa!='' && $rh!='') {
 			$emails=$this->email_m->get_email_donatori_activi_($grupa,$rh);

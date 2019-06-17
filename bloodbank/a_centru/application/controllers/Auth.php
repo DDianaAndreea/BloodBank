@@ -21,15 +21,10 @@ class Auth extends CI_Controller {
 	public function verify_admin_login()
 	{
 		$postData = $this->input->post();
-        $validate = $this->auth_m->admin_login($postData);
+        $validate = $this->auth_m->verify_login($postData);
 
         // echo "Validate: <pre>".print_r($validate, true)."</pre>";
         // die();
-
-                $data = array(
-        		'eroare' => false,
-        		'mesaj'  => 'Email sau parola gresita'   		
-        	);
     
 		if(count($validate)>0)
 		{

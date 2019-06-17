@@ -241,6 +241,23 @@ class Donatori extends CI_Controller {
 
 		redirect('donatori/in_donors','refresh');
 	}
+	public function send_email_r_d(){
+		
+		$id=$this->uri->segment(3);
+		$data = array(
+			
+			'mesaj'=> $this->donatori_m->get_donatori_respinsi($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
+		);
+		$this->load->view('layout/header',$data);
+		$this->load->view('layout/navbar');
+		$this->load->view('email/response',$data);
+		$this->load->view('layout/footer');
+	
+
+
+	}
 
 	public function skeyword()
 	{

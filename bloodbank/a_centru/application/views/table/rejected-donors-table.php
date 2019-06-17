@@ -53,7 +53,7 @@
                                         
                                         <td><a class="fa fa-file btn" style="color:#8B0000" href="<?php echo base_url('donatori/chestionar/'.$donator->ID)?>"></a> </td>
                                         <td><a class="fa fa-id-card btn" style="color:#8B0000" href="<?php echo base_url('donatori/carnetul_donatorului/'.$donator->ID)?>"></a> </td>
-                                        <td> <a  class="fa fa-times-circle btn" style="color:#8B0000" href="" data-toggle="modal" data-target="#modalAppointment"> nu aprobă donarea</a> 
+                                        <td> <a  class="fa fa-times-circle btn" style="color:#8B0000" href="<?php echo base_url('donatori/send_email_r_d/'.$donator->ID)?>" > nu aprobă donarea</a> 
                                         
                                     </tr>
                                     <?php endforeach?>
@@ -68,7 +68,9 @@
 
 
 <!-- Modal -->
-    <div class="modal fade" id="modalAppointment" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel" aria-hidden="true">
+    <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel" aria-hidden="true">
+    <form action="<?php echo base_url('donato/send_email_r_d')?>" method="POST">
+
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
