@@ -66,9 +66,9 @@ class Spitale extends CI_Controller {
 
 	public function delete_spital(){
 		$id=$this->uri->segment(3);
+		
 		$cantitate_spital= $this->spitale_m->get_cantitate($id);
 		$grupa=$this->spitale_m->get_grupa($id);
-
 		$rh=$this->spitale_m->get_rh($id);
 
 		// echo "cantitate_spital: <pre>".print_r($cantitate_spital,true)."</pre>";

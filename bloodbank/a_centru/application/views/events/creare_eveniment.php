@@ -84,7 +84,7 @@
             </table>
             <br>
 
-            <input type="submit" name="submit" value="Încarca">
+            <input class="btn btn-danger" style="background: #8B0000;" type="submit" name="submit" value="Încarcă">
 
         </form>
             

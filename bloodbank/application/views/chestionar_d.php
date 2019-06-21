@@ -40,7 +40,7 @@
               </div>
 
               <div class="form-group row">
-                <label class="col-md-9">2.IÎn ultima vreme ați avut:</label>
+                <label class="col-md-9">2.În ultima vreme ați avut:</label>
                 <br>
                 <label class="col-md-9">- o pierdere în greutate neasteptată</label>
                 <div class="col col-sm-2">
@@ -192,7 +192,7 @@
               </div>
 
               <div class="form-group row">
-                <label class="col-md-9">- boli transmise sexual(hiv,sifilis etc)></label>
+                <label class="col-md-9">- boli transmise sexual(hiv,sifilis etc).</label>
                 <div class="col col-sm-2">
                     <input type="radio" name="c20" value="Da">Da</input>
                     <input type="radio" name="c20" value="Nu">Nu</input>

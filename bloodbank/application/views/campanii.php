@@ -31,15 +31,34 @@
             <span><?php echo $campanie->data?></span><br>
             <span><?php echo $campanie->locatie?></span>
             <p class="lead"> <?php echo $campanie->descriere?> </p>
-            <a href="" class="btn btn-danger" style="font-color:white;">Vreau să particip</a>
+            
+            <?php 
+              $cookieCampaign = 'cookie'.$campanie->ID;
+            ?>
+
+              <div id="<?php echo $campanie->ID?>">
+                <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger <?php if ( isset($_COOKIE[$cookieCampaign]) ) echo 'disabled' ?>" style="font-color:white;">Vreau să particip</a>
+              </div>
+            
+            <br>
+            <div>
            </div>
         </div>
+        <br>
 
       <?php endforeach?>
+      
      
 
 
       </div>
     </section>
+<!-- <script>
+    function setCookie(<?php echo $campanie->$ID?>){
+      $('#'.<?$php echo $campanie->$ID ?>.'').hide();
+      alert('Multumim pentru participare!');
 
+
+    }
+</script> -->
   

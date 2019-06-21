@@ -69,6 +69,8 @@ class Pacienti extends CI_Controller {
 
 		$data = array(
 			'pacienti' =>$this->pacienti_m->get_info_pacient($id),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+			
 
 		);
 		

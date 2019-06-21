@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/fonts/fontawesome/css/font-awesome.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/fonts/flaticon/font/flaticon.css')?>">
 
+    <script type="text/javascript" src="<?php echo base_url('assets/js/cookie.js')?>"></script> 
+
 
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 

@@ -18,12 +18,12 @@ class Cerere_Donare extends CI_Controller {
 		$this->load->view('layout/footer');
 	}
 
-	public function cerere_d()
-	{	
-		$this->load->view('layout/header');
-		$this->load->view('cerere_d');
-		$this->load->view('layout/footer');
-	}
+	// public function cerere_d()
+	// {	
+	// 	$this->load->view('layout/header');
+	// 	$this->load->view('cerere_d');
+	// 	$this->load->view('layout/footer');
+	// }
 
 	public function chestionar_d()
 	{	
