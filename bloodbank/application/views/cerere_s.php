@@ -21,25 +21,25 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Denumire centru</label>
-                    <input type="text" class="form-control" name="denumire" >
+                    <input type="text" class="form-control" name="denumire" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Telefon</label>
-                    <input type="text" class="form-control" name="telefon" >
+                    <input type="text" class="form-control" name="telefon" required>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label  class="text-black">Email</label>
-                <input type="text" class="form-control" name="email" >
+                <input type="text" class="form-control" name="email" required>
               </div>
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
                     <label class="text-black">Cantitate(nr. de pungi) </label><br>
-                    <input type="text" class="form-control" name="cantitate">
+                    <input type="text" class="form-control" name="cantitate" required>
                   </div>
                 </div>
                 <div class="col-md-4">

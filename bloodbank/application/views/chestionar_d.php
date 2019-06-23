@@ -276,21 +276,21 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label  class="text-black">Prenume</label>
-                            <input name="prenume" type="text" class="form-control" >
+                            <input name="prenume" type="text" class="form-control" required >
                           </div>
                         </div>
 
                         <div class="col-md-6">
                           <div class="form-group">
                             <label  class="text-black">Nume</label>
-                            <input name="nume" type="text" class="form-control" >
+                            <input name="nume" type="text" class="form-control" required>
                           </div>
                         </div>
                       </div>
 
                       <div class="form-group">
                         <label  class="text-black">Email</label>
-                         <input name="email" type="text" class="form-control" >
+                         <input name="email" type="text" class="form-control" required>
                       </div>
                       
 
@@ -298,14 +298,14 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label  class="text-black">Data nasterii</label>
-                            <input name="data_nastere"type="text" class="form-control" placeholder="aaaa-ll-zz">
+                            <input name="data_nastere"type="text" class="form-control" placeholder="aaaa-ll-zz" required>
                           </div>    
                         </div>
 
                         <div class="col-md-6">
                           <div class="form-group">
                             <label  class="text-black">Telefon</label>
-                            <input name="telefon" type="text" class="form-control" >
+                            <input name="telefon" type="text" class="form-control" required>
                           </div>
                         </div>
                       </div>
@@ -322,7 +322,7 @@
 
                         <div class="col-md-4">
                           <div class="form-group">
-                            <label class="text-black">RH </label><br>
+                            <label class="text-black" required>RH </label><br>
                             <input type="radio" name="rh" value="+"> Pozitiv</input>
                             <input type="radio" name="rh" value="-"> Negativ</input>
                           </div>

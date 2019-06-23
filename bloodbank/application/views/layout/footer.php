@@ -82,13 +82,13 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Prenume</label>
-                    <input type="text" name="prenume" class="form-control" >
+                    <input type="text" name="prenume" class="form-control" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Nume</label>
-                    <input type="text" name="nume" class="form-control" >
+                    <input type="text" name="nume" class="form-control" required>
                   </div>
                   
                 </div>
@@ -96,13 +96,13 @@
 
               <div class="form-group">
                 <label for="appointment_email" class="text-black">Email</label>
-                <input type="text" name="email" class="form-control" id="appointment_email">
+                <input type="text" name="email" class="form-control" id="appointment_email" required>
               </div>
               
 
               <div class="form-group">
                 <label for="appointment_message" class="text-black">Mesajul tău</label>
-                <textarea name="mesaj" type="text" id="appointment_message" class="form-control" cols="30" rows="5"></textarea>
+                <textarea name="mesaj" type="text" id="appointment_message" class="form-control" cols="30" rows="5" required></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" name="submit" value="Trimite" class="btn btn-danger">

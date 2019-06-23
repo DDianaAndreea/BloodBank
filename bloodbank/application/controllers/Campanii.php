@@ -12,7 +12,6 @@ class Campanii extends CI_Controller {
 		$this->load->helper('cookie');
 
 
-
 		
 	}
 
@@ -32,11 +31,9 @@ class Campanii extends CI_Controller {
 	{	
 		$id= $this->uri->segment(3);
 		$data= $this->cookie_m->get_date($id);
+
+		//echo "Data: <pre>".print_r($data,true)."</pre>";
 		
-
-		echo "Data: <pre>".print_r($data,true)."</pre>";
-
-
 		$cookie = array(
 			'name' => 'cookie'.$id, 
 			'value' => $id,
@@ -44,11 +41,11 @@ class Campanii extends CI_Controller {
 			'expire' => strtotime($data[0]->data) ,
 		);
          
-		 echo "Cookie val: <pre>".print_r($cookie,true)."</pre>";
+		 //echo "Cookie val: <pre>".print_r($cookie,true)."</pre>";
 
 		$cookie_name= $cookie['name'];
 
-		 echo "Cookie name: <pre>".print_r($cookie_name,true)."</pre>";
+		// echo "Cookie name: <pre>".print_r($cookie_name,true)."</pre>";
 
 		$this->input->set_cookie($cookie);
 
@@ -60,28 +57,11 @@ class Campanii extends CI_Controller {
 			$this->cookie_m->participanti($participanti->ID, $participanti->participanti+1);
 		}
 
-		// $data_cookie=$this->input->cookie('cookie'.$id);
 
-		//  echo "Cookie val: <pre>".print_r($data_cookie,true)."</pre>";
-
-		
-
-
-		//redirect('campanii','refresh');
+		redirect('campanii','refresh');
 
 	}
 
-	 // function get_cookie($nume)
- 	// {
- 	// 	if (get_cookie($nume)) {
- 			
- 	// 	}
- 	// 	else
- 		
-  		
- 	// }
-
-	
 
 	
 }

@@ -27,23 +27,23 @@
               <div class="row">
                 <div class="col-md-6 form-group">
                   <label for="fname">Prenume</label>
-                  <input type="text" name="prenume" class="form-control form-control-lg" id="fname">
+                  <input type="text" name="prenume" class="form-control form-control-lg" id="fname" required>
                 </div>
                 <div class="col-md-6 form-group">
                   <label for="lname">Nume</label>
-                  <input type="text" name="nume" class="form-control form-control-lg" id="lname">
+                  <input type="text" name="nume" class="form-control form-control-lg" id="lname" required>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
                   <label for="email">Email</label>
-                  <input type="email" name="email" id="email" class="form-control form-control-lg">
+                  <input type="email" name="email" id="email" class="form-control form-control-lg" required>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
                   <label for="message">Mesaj</label>
-                  <textarea name="mesaj" type=""text id="message" class="form-control form-control-lg" cols="30" rows="8"></textarea>
+                  <textarea name="mesaj" type=""text id="message" class="form-control form-control-lg" cols="30" rows="8" required></textarea>
                 </div>
               </div>
               <div class="row">

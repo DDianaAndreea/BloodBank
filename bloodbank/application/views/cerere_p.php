@@ -22,31 +22,31 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Prenume</label>
-                    <input type="text" class="form-control" name="prenume" >
+                    <input type="text" class="form-control" name="prenume" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Nume</label>
-                    <input type="text" class="form-control" name="nume" >
+                    <input type="text" class="form-control" name="nume" required>
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <label  class="text-black">Email</label>
-                <input type="text" class="form-control" name="email" >
+                <input type="text" class="form-control" name="email" required>
               </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Data nașterii</label>
-                    <input type="text" class="form-control" placeholder="an.luna.zi" name="data_nastere">
+                    <input type="text" class="form-control" placeholder="an.luna.zi" name="data_nastere" required>
                   </div>    
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Telefon</label>
-                    <input type="text" class="form-control" name="telefon">
+                    <input type="text" class="form-control" name="telefon" required>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@
 
               <div class="form-group">
                 <label for="appointment_message" class="text-black">Cazul dvs.</label>
-                <textarea name="caz" id="appointment_message" class="form-control" cols="30" rows="10" type="text"></textarea>
+                <textarea name="caz" id="appointment_message" class="form-control" cols="30" rows="10" type="text" required></textarea>
               </div>
 
               <div class="form-group">

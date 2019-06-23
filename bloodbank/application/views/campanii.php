@@ -28,18 +28,28 @@
           <div class="col-md-1"></div>
           <div class="col-md-7 element-animate">
             <h2 class="text-burg"><?php echo $campanie->denumire?></h2>
+            <span class="fa fa-user"> <?php echo $campanie->participanti?></span> <br>
             <span><?php echo $campanie->data?></span><br>
             <span><?php echo $campanie->locatie?></span>
             <p class="lead"> <?php echo $campanie->descriere?> </p>
             
             <?php 
-              $cookieCampaign = 'cookie'.$campanie->ID;
+              $cookieCampanie = 'cookie'.$campanie->ID;
             ?>
 
+           <!--    <div id="<?php echo $campanie->ID?>">
+                <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger <?php if ( isset($_COOKIE[$cookieCampanie]) ) echo 'disabled' ?>" style="font-color:white;">Vreau să particip</a>
+              </div> -->
+
+            <?php if ( !isset($_COOKIE[$cookieCampanie]) ): ?>
               <div id="<?php echo $campanie->ID?>">
-                <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger <?php if ( isset($_COOKIE[$cookieCampaign]) ) echo 'disabled' ?>" style="font-color:white;">Vreau să particip</a>
+                <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger " style="font-color:white;">Vreau să particip</a>
+              </div> 
+            <?php else:?>
+              <div id="<?php echo $campanie->ID?>">
+                <a href=""  class="btn btn-danger disabled " style="font-color:white;">Ai ales să participi la această campanie</a>
               </div>
-            
+            <?php endif?>
             <br>
             <div>
            </div>
@@ -47,18 +57,18 @@
         <br>
 
       <?php endforeach?>
-      
-     
 
+ 
+
+ 
+
+
+
+      
+     </div>
 
       </div>
     </section>
-<!-- <script>
-    function setCookie(<?php echo $campanie->$ID?>){
-      $('#'.<?$php echo $campanie->$ID ?>.'').hide();
-      alert('Multumim pentru participare!');
 
-
-    }
-</script> -->
+   
   

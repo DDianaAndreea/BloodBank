@@ -71,7 +71,7 @@
         <div class="row align-items-center">
           
           <div class="col-md-6 stretch-left-1 element-animate" data-animate-effect="fadeInLeft">
-            <a href="#" class="video"><img src="<?php echo base_url('assets/images/donare-sange.jpg')?>" alt="" class="img-fluid"></a>
+            <a href="<?php echo base_url("dece") ?>" class="video"><img src="<?php echo base_url('assets/images/donare-sange.jpg')?>" alt="" class="img-fluid"></a>
           </div>
           <div class="col-md-6 stretch-left-1-offset pl-md-5 pl-0 element-animate" data-animate-effect="fadeInLeft">
             <div class="row">

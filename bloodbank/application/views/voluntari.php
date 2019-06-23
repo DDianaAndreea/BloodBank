@@ -23,13 +23,13 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Prenume</label>
-                    <input type="text" name="prenume" class="form-control" placeholder="prenume*">
+                    <input type="text" name="prenume" class="form-control" placeholder="prenume*" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Nume</label>
-                    <input type="text" name="nume" class="form-control" placeholder="nume*">
+                    <input type="text" name="nume" class="form-control" placeholder="nume*" required>
                   </div>
                 </div>
               </div>
@@ -38,13 +38,13 @@
                 <div class="col-md-6">
                 <div class="form-group">
                   <label  class="text-black">Email</label>
-                  <input type="text" name="email" class="form-control" placeholder="email*" >
+                  <input type="text" name="email" class="form-control" placeholder="email*" required>
                 </div>
               </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label  class="text-black">Telefon</label>
-                    <input type="text" name="telefon" class="form-control" placeholder="telefon*" >
+                    <input type="text" name="telefon" class="form-control" placeholder="telefon*" required>
                   </div>
                 </div>
               </div>
