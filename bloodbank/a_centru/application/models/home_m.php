@@ -196,8 +196,11 @@ class home_m extends CI_Model {
 
 	public function search_p($key)
 	{
+		$this->db->where('activ', '1');
 		$this->db->like('nume', $key);
 		$this->db->or_like('prenume', $key);
+		
+
 
 		
 

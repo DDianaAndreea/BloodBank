@@ -109,6 +109,7 @@ class Email extends CI_Controller {
     	$email=$postData['email'];
     	$subiect=$postData['subiect'];
     	$mesaj=$postData['mesaj'];
+    	
 	
 	//echo "<pre>".print_r($mesaj,true)."</pre>";
 

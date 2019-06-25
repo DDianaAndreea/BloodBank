@@ -72,12 +72,18 @@ class Admin extends CI_Controller {
 		);
 		
 		//echo "data: <pre>".print_r($data,true)."</pre>";
-
-		$this->load->view('layout/header',$data);
-		$this->load->view('layout/navbar');
-		$this->load->view('donator',$data);
-		$this->load->view('layout/footer');
-	
+		if ($data['donatori']) {
+			$this->load->view('layout/header',$data);
+			$this->load->view('layout/navbar');
+			$this->load->view('donator',$data);
+			$this->load->view('layout/footer');
+		}else{
+			$this->load->view('layout/header',$data);
+			$this->load->view('layout/navbar');
+			$this->load->view('_err');
+			$this->load->view('layout/footer');
+		}
+		
 	}
 
 	public function p_skeyword()
@@ -94,12 +100,18 @@ class Admin extends CI_Controller {
 		);
 		
 		//echo "data: <pre>".print_r($data,true)."</pre>";
-
-		$this->load->view('layout/header',$data);
-		$this->load->view('layout/navbar');
-		$this->load->view('table/patient-table',$data);
-		$this->load->view('layout/footer');
-	
+		if ($data['pacienti']) {
+			$this->load->view('layout/header',$data);
+			$this->load->view('layout/navbar');
+			$this->load->view('table/patient-table',$data);
+			$this->load->view('layout/footer');
+			
+		}else{
+			$this->load->view('layout/header',$data);
+			$this->load->view('layout/navbar');
+			$this->load->view('_err');
+			$this->load->view('layout/footer');
+		}
 	}
 
 }

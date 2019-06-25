@@ -105,6 +105,7 @@
                                 </textarea>
                             </div>
                         </div>
+                       
 
                         <div class="compose-ml col-md-3" style="padding-top: 30px;">
                             <input class="btn" style="background: #8B0000;" type="submit" name="submit" value="Trimite">

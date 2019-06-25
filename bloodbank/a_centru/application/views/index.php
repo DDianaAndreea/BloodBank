@@ -138,7 +138,7 @@
                                             <td><?php echo $eveniment->denumire?></td>
                                             <td><?php echo $eveniment->data?></td>
                                             <td><?php echo $eveniment->locatie?></td>
-                                            <td><?php echo $eveniment->participanti?></td>
+                                            <td><?php echo $eveniment->participanti?> <span class="fa fa-user"></span></td>
 
 
                                         </tr>
