@@ -10,6 +10,7 @@ class Campanii extends CI_Controller {
 		$this->load->model('cookie_m');
 
 		$this->load->helper('cookie');
+		
 
 
 		
@@ -26,6 +27,7 @@ class Campanii extends CI_Controller {
 		$this->load->view('campanii',$data);
 		$this->load->view('layout/footer');
 	}
+
 	
 	public function setCookie()
 	{	

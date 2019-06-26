@@ -61,7 +61,7 @@
             <p class="mb-5">Strada Aleea Viorelelor,4 <br> Slatina,România</p>
             
             <h5 class="text-uppercase mb-3">Email</h5>
-            <p class="mb-5"><a href="mailto:info@yourdomain.com">info@bloodbank.com</a>
+            <p class="mb-5"><a href="mailto:info@yourdomain.com">centrulBloodBank@gmail.com</a>
             
             <h5 class="text-uppercase mb-3">Telefon</h5>
             <p class="mb-5">Mobil: 0760373781 <br> Fix: 0349807258 </p>

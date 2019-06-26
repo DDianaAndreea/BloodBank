@@ -3,10 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class donatori_m extends CI_Model {
 
+  protected $table = 'donatori';
+
 	function get_cereri_donatori(){
 		$this->db->select('*');
 		$this->db->from('donatori');
 		$this->db->where('activ','0');
+    $this->db->order_by('data_cererii','asc');
+
 
 		$query=$this->db->get();
 
@@ -366,6 +370,16 @@ class donatori_m extends CI_Model {
 	}
 
 
+
+  public function get_donatori($limit, $start) {
+        $this->db->limit($limit, $start);
+        $this->db->where('activ','2');
+        $this->db->order_by('nume','asc');
+
+        $query = $this->db->get($this->table);
+
+        return $query->result();
+    }
 	// function fetch_data($query)
  // 	{
  //  		$this->db->select("*");

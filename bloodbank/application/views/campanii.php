@@ -29,7 +29,7 @@
           <div class="col-md-7 element-animate">
             <h2 class="text-burg"><?php echo $campanie->denumire?></h2>
             <span class="fa fa-user"> <?php echo $campanie->participanti?></span> <br>
-            <span><?php echo $campanie->data?></span><br>
+            <span><?php echo date("d-m-Y",strtotime($campanie->data))?></span><br>
             <span><?php echo $campanie->locatie?></span>
             <p class="lead"> <?php echo $campanie->descriere?> </p>
             
@@ -46,6 +46,7 @@
                 <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger " style="font-color:white;">Vreau să particip</a>
               </div> 
             <?php else:?>
+
               <div id="<?php echo $campanie->ID?>">
                 <a href=""  class="btn btn-danger disabled " style="font-color:white;">Ai ales să participi la această campanie</a>
               </div>

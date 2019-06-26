@@ -91,7 +91,7 @@ $route['evenimente']='evenimente/vizualizare_evenimente';
 $route['evenimente_in_asteptare']='evenimente/evenimente_in_asteptare';
 
 
-
+$route['donatori/(:num)'] = 'donatori';
 
 
 $route['default_controller'] = 'admin';

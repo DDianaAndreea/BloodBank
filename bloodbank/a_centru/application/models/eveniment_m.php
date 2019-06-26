@@ -28,6 +28,8 @@ class eveniment_m extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('campanii');
 		$this->db->where('in_asteptare','1');
+		$this->db->order_by('data','asc');
+
 
 		$query=$this->db->get();
 

@@ -9,25 +9,50 @@ class Donatori extends CI_Controller {
 		$this->load->model('donatori_m');
 		$this->load->model('stocuri_m');
 		$this->load->model('email_m');
+		$this->load->library("pagination");
+		$this->load->model('home_m');
+
 
 
 	}
 
 	public function index()
 	{
-		$data = array(
+		// $data = array(
 			
-			'donatori'=> $this->donatori_m->get_donatori_activi(),
-			'd'=> $this->donatori_m->get_carnete_donatori(),
-			'unread_msg'=>$this->email_m->get_unread_msg(),
+		// 	'donatori'=> $this->donatori_m->get_donatori_activi(),
+		// 	'd'=> $this->donatori_m->get_carnete_donatori(),
+		// 	'unread_msg'=>$this->email_m->get_unread_msg(),
 
 			
-		);
+		// );
+
+		// $this->load->view('layout/header',$data);
+		// $this->load->view('layout/navbar');
+		// $this->load->view('table/active-donors-table',$data);
+		// $this->load->view('layout/footer');
+
+		$config = array();
+        $config["base_url"] = base_url() . "donatori";
+        $config["total_rows"] = $this->home_m->get_nr_ad();
+        $config["per_page"] = 10;
+        $config["uri_segment"] = 2;
+
+        $this->pagination->initialize($config);
+
+        $page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
+
+        $data["links"] = $this->pagination->create_links();
+
+        $data['donatori'] = $this->donatori_m->get_donatori($config["per_page"], $page);
+        $data['d'] = $this->donatori_m->get_carnete_donatori();
+        $data['unread_msg'] = $this->email_m->get_unread_msg();
 
 		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
-		$this->load->view('table/active-donors-table',$data);
+        $this->load->view('table/active-donors-table', $data);
 		$this->load->view('layout/footer');
+
 	}
 
 	public function in_donors()
@@ -279,7 +304,7 @@ class Donatori extends CI_Controller {
 
 		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
-		$this->load->view('table/active-donors-table',$data);
+		$this->load->view('table/active-donors-table-s',$data);
 		$this->load->view('layout/footer');
 	
 	}

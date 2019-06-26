@@ -190,11 +190,16 @@
               <div class="media d-block media-custom text-left">
                 <img src="<?php echo base_url('/a_centru/assets/uploads/'.$eveniment->imagine) ?>" class="img-fluid mb-4" alt="Image placeholder">
                 <div class="media-body">
-                  <span class="meta-post"><?php echo $eveniment->data?></span>
+                  <span class="meta-post"><?php echo date("d-m-Y",strtotime($eveniment->data))?></span> 
                   <h3 class="mt-0 text-black"><a href="<?php echo base_url("campanii") ?>" class="text-black"><?php echo $eveniment->denumire?></a></h3>
-                  <p><?php echo $eveniment->locatie?></p>
+                  <!-- <p><?php echo $eveniment->locatie?></p> -->
                   <p class="clearfix">
-                    <!-- <a href="#" class="float-left text-burg">Read more</a> -->
+                    <p><?php 
+                      $this->load->helper('text');
+                      $string=character_limiter($eveniment->descriere, 100);
+                      echo $string;
+                    ?></p>
+                    <a href="<?php echo base_url("campanii") ?>" class="float-left text-burg">Citește mai mult</a>
                     <a href="<?php echo base_url("campanii") ?>" class="float-right meta-chat"><span class="fa fa-user"></span> <?php echo $eveniment->participanti?></a>
                     
                   </p>

@@ -8,6 +8,8 @@ class pacienti_m extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('pacienti');
 		$this->db->where('activ','0');
+		$this->db->order_by('data_cererii','asc');
+
 
 		$query=$this->db->get();
 
@@ -18,6 +20,8 @@ class pacienti_m extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('pacienti');
 		$this->db->where('activ','1');
+		$this->db->order_by('data_cererii','asc');
+
 
 		$query=$this->db->get();
 
