@@ -274,7 +274,7 @@
                             </div>
                             <div class="recent-items-inn">
                                 <div >
-                                    <form method="post" action="<?php echo base_url('admin/d_skeyword')?>">
+                                    <form method="get" action="<?php echo base_url('admin/d_skeyword')?>">
                                         <input type="text" name="d_key" id="d_search_box" class="form-control input-lg typeahead" placeholder="caută după CNP" />
                                     </form>
                                 </div>
@@ -287,7 +287,7 @@
                             </div>
                             <div class="recent-items-inn" style="padding-bottom: 10px;">
                                 <div >
-                                    <form method="post" action="<?php echo base_url('admin/p_skeyword')?>">
+                                    <form method="get" action="<?php echo base_url('admin/p_skeyword')?>">
                                         <input type="text" name="p_key" id="p_search_box" class="form-control input-lg typeahead" placeholder="caută după Nume sau Prenume" />
                                     </form>
                                 </div>

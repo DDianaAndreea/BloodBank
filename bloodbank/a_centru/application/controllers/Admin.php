@@ -56,7 +56,7 @@ class Admin extends CI_Controller {
 
 	public function d_skeyword()
 	{
-		$key=$this ->input->post('d_key');
+		$key=$this ->input->get('d_key');
 		
 
 		$data = array(
@@ -88,7 +88,7 @@ class Admin extends CI_Controller {
 
 	public function p_skeyword()
 	{
-		$key=$this ->input->post('p_key');
+		$key=$this ->input->get('p_key');
 		
 
 		$data = array(

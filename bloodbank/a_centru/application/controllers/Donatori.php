@@ -286,7 +286,7 @@ class Donatori extends CI_Controller {
 
 	public function skeyword()
 	{
-		$key=$this ->input->post('don_key');
+		$key=$this ->input->get('don_key');
 		
 
 		$data = array(
