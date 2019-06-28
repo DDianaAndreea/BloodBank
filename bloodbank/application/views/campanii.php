@@ -21,36 +21,37 @@
       <div class="container">
 
         <?php foreach($campanii as $campanie):?>
-        <div class="row">
-          <div class="col-md-3 element-animate">
-            <img src="<?php echo base_url('/a_centru/assets/uploads/'.$campanie->imagine) ?>" class="img-fluid mb-4" alt="Image placeholder">
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-7 element-animate">
-            <h2 class="text-burg"><?php echo $campanie->denumire?></h2>
-            <span class="fa fa-user"> <?php echo $campanie->participanti?></span> <br>
-            <span><?php echo date("d-m-Y",strtotime($campanie->data))?></span><br>
-            <span><?php echo $campanie->locatie?></span>
-            <p class="lead"> <?php echo $campanie->descriere?> </p>
-            
-            <?php 
-              $cookieCampanie = 'cookie'.$campanie->ID;
-            ?>
+              <div class="row">
+                  <div class="col-md-3 element-animate">
+                      <img src="<?php echo base_url('/a_centru/assets/uploads/'.$campanie->imagine) ?>" class="img-fluid mb-4" alt="Image placeholder">
+                  </div>
+                  <div class="col-md-1"></div>
+                  <div class="col-md-7 element-animate">
+                      <h2 class="text-burg"><?php echo $campanie->denumire?></h2>
+                      <span class="fa fa-user"> <?php echo $campanie->participanti?></span> <br>
+                      <span><?php echo date("d-m-Y",strtotime($campanie->data))?></span><br>
+                      <span><?php echo $campanie->locatie?></span>
+                      <p class="lead"> <?php echo $campanie->descriere?> </p>
 
-           <!--    <div id="<?php echo $campanie->ID?>">
+                      <?php
+                      $cookieCampanie = 'cookie'.$campanie->ID;
+                      ?>
+
+                      <!--    <div id="<?php echo $campanie->ID?>">
                 <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger <?php if ( isset($_COOKIE[$cookieCampanie]) ) echo 'disabled' ?>" style="font-color:white;">Vreau să particip</a>
               </div> -->
 
-            <?php if ( !isset($_COOKIE[$cookieCampanie]) ): ?>
-              <div id="<?php echo $campanie->ID?>">
-                <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger " style="font-color:white;">Vreau să particip</a>
-              </div> 
-            <?php else:?>
+                      <?php if ( !isset($_COOKIE[$cookieCampanie]) ): ?>
+                          <div id="<?php echo $campanie->ID?>">
+                              <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger " style="font-color:white;">Vreau să particip</a>
+                          </div>
+                      <?php else:?>
 
-              <div id="<?php echo $campanie->ID?>">
-                <a href=""  class="btn btn-danger disabled " style="font-color:white;">Ai ales să participi la această campanie</a>
-              </div>
-            <?php endif?>
+                          <div id="<?php echo $campanie->ID?>">
+                              <a href=""  class="btn btn-danger disabled " style="font-color:white;">Ai ales să participi la această campanie</a>
+                              <div class="fb-share-button" data-href="http://bloodbank.helixsolutions.ro/campanii/campanie/<?php echo $campanie->ID?>" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
+                          </div>
+                      <?php endif?>
             <br>
             <div>
            </div>

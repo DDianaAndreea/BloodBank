@@ -28,6 +28,21 @@ class Campanii extends CI_Controller {
 		$this->load->view('layout/footer');
 	}
 
+
+	public function campanie()
+	{
+		$id=$this->uri->segment(3);
+		$data = array(
+			'campanii' =>$this->campanii_m->get_campanie($id)
+		);
+
+		
+		$this->load->view('layout/header');
+		$this->load->view('campanii',$data);
+		$this->load->view('layout/footer');
+		
+	}
+
 	
 	public function setCookie()
 	{	
@@ -63,6 +78,7 @@ class Campanii extends CI_Controller {
 		redirect('campanii','refresh');
 
 	}
+
 
 
 	

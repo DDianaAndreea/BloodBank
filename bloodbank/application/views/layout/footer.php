@@ -58,7 +58,9 @@
           </div>
           <div class="col-md-6 col-sm-12 text-md-right text-sm-left">
             <!-- <a href="" class="p-2"><span class="fa fa-facebook"></span></a> -->
-           <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://bloodbank.com/create-facebook-share-button-for-website-webpages/&layout=button&size=small&mobile_iframe=true&width=60&height=20&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<!--              <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://bloodbank.com/create-facebook-share-button-for-website-webpages/&layout=button&size=small&mobile_iframe=true&width=60&height=20&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
+              <div class="fb-share-button" data-href="http://bloodbank.helixsolutions.ro/index" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
+
           </div>
           
         </div>
@@ -124,5 +126,7 @@
     <script src="<?php echo base_url('assets/js/jquery.timepicker.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.waypoints.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/main.js')?>"></script>
-  </body>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v3.3&appId=2372864253025567&autoLogAppEvents=1"></script>
+
+    </body>
 </html>

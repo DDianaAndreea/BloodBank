@@ -15,5 +15,14 @@ class campanii_m extends CI_Model {
 		return $query->result();
 	}
 
+    public function get_campanie($id){
+        $this->db->select('*');
+        $this->db->from('campanii');
+        $this->db->where('ID', $id);
+
+        $query=$this->db->get();
+
+        return $query->result();
+    }
 
 	}
