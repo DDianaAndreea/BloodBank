@@ -69,20 +69,7 @@
                                     </div>
                                 </div>
                             </div>
-                         <!--    <div class="row">
-                                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
-                                    <div class="cmp-int-lb cmp-int-lb1 text-right">
-                                        <span>Cc: </span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12">
-                                    <div class="form-group">
-                                        <div class="nk-int-st cmp-int-in cmp-email-over">
-                                            <input type="email" class="form-control" placeholder="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+
                             <div class="row">
                                 <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
                                     <div class="cmp-int-lb text-right">

@@ -49,7 +49,7 @@
 
                           <div id="<?php echo $campanie->ID?>">
                               <a href=""  class="btn btn-danger disabled " style="font-color:white;">Ai ales să participi la această campanie</a>
-                              <div class="fb-share-button" data-href="http://bloodbank.helixsolutions.ro/campanii/campanie/<?php echo $campanie->ID?>" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
+                              <div class="fb-share-button" data-href="https://bloodbank.helixsolutions.ro/campanii/campanie/<?php echo $campanie->ID?>" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
                           </div>
                       <?php endif?>
             <br>

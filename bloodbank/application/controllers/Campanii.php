@@ -37,7 +37,7 @@ class Campanii extends CI_Controller {
 		);
 
 		
-		$this->load->view('layout/header');
+		$this->load->view('layout/header2');
 		$this->load->view('campanii',$data);
 		$this->load->view('layout/footer');
 		

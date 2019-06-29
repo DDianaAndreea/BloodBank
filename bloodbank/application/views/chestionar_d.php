@@ -290,7 +290,7 @@
 
                       <div class="form-group">
                         <label  class="text-black">Email</label>
-                         <input name="email" type="text" class="form-control" required>
+                         <input name="email" type="email" class="form-control" required>
                       </div>
                       
 

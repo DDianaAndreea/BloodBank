@@ -25,10 +25,6 @@
     
 <div class="container">
 <div class="normal-table-list mg-t-30">
-                        <!-- <div class="basic-tb-hd">
-                            <h2>Table Condensed</h2>
-                            <p>Make tables more compact by cutting cell padding in half (<code>.table-condensed</code>).</p>
-                        </div> -->
                         <div class="bsc-tbl-cds">
                             <table class="table table-condensed">
                                 <thead>

@@ -158,6 +158,12 @@ class Email extends CI_Controller {
 			}
      		
 			
+		}elseif($grupa!='' && $rh!='0'){
+			$emails=$this->email_m->get_email_donatori_activi_gr($grupa);
+			foreach ($emails as $email) {
+     			$this->email_m->sendEmail($email->email,$subiect,$mesaj);
+			}
+
 		}else{
 			$emails=$this->email_m->get_email_donatori_activi();
 			foreach ($emails as $email) {

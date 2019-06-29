@@ -38,7 +38,7 @@
                 <div class="col-md-6">
                 <div class="form-group">
                   <label  class="text-black">Email</label>
-                  <input type="text" name="email" class="form-control" placeholder="email*" required>
+                  <input type="email" name="email" class="form-control" placeholder="email*" required>
                 </div>
               </div>
                 <div class="col-md-6">

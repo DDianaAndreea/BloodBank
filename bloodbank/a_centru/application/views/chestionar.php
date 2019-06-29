@@ -15,8 +15,9 @@
 
 										<h5><?php echo $donator->data_cererii?></h5>
 									<?php endforeach?>
-                                        <a href="" class="btn btn-danger" data-toggle="modal" data-target="#datePersonale"> Adăugare date personale</a>
-
+                                        <?php if(!$donator->activ):?>
+                                            <a href="" class="btn btn-danger" data-toggle="modal" data-target="#datePersonale"> Adăugare date personale</a>
+                                        <?php endif?>
 										
 									</div>
 									

@@ -11,7 +11,9 @@
 									</div>
 									<div class="breadcomb-ctn">
 										<h2>Donatori în așteptare</h2>
-										
+										<form method="get" action="<?php echo base_url('donatori/skeyword2')?>">
+                                            <input type="text" style="width:490px; " name="don_key" id="don_search_box"  class="form-control input-lg typeahead" placeholder="caută donator după Nume, Prenume sau Grupa Sanguină" />
+                                        </form>
 									</div>
 								</div>
 							</div>
@@ -25,10 +27,7 @@
 	
 <div class="container">
 <div class="normal-table-list mg-t-30">
-                        <!-- <div class="basic-tb-hd">
-                            <h2>Table Condensed</h2>
-                            <p>Make tables more compact by cutting cell padding in half (<code>.table-condensed</code>).</p>
-                        </div> -->
+                       
                         <div class="bsc-tbl-cds">
                             <table class="table table-condensed">
                                 <thead>

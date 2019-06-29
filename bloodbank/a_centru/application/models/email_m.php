@@ -104,6 +104,17 @@ class email_m extends CI_Model {
     return $query->result();
   }
 
+   public function get_email_donatori_activi_gr($grupa){
+    $this->db->select('email');
+    $this->db->from('donatori');
+    $this->db->where('activ','2');
+    $this->db->where('grupa_sanguina',$grupa);
+
+    $query=$this->db->get();
+
+    return $query->result();
+  }
+
   public function get_unread_msg(){
 
     $this->db->select('*');

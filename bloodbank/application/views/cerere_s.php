@@ -33,7 +33,7 @@
               </div>
               <div class="form-group">
                 <label  class="text-black">Email</label>
-                <input type="text" class="form-control" name="email" required>
+                <input type="email" class="form-control" name="email" required>
               </div>
               <div class="row">
                 <div class="col-md-4">

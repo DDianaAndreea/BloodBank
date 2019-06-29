@@ -180,7 +180,7 @@
             
             <p class="mb-0 lead">Donațiile se fac în mod voluntar și neremunerat.Te asteptăm la evenimente atât pentru a dona cat și pentru a afla mai multe detalii despre noi și oamenii care au nevoie de noi.</p>
 <!--            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://bloodbank.com/create-facebook-share-button-for-website-webpages/&layout=button&size=small&mobile_iframe=true&width=60&height=20&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
-              <div class="fb-share-button" data-href="http://bloodbank.helixsolutions.ro/campanii" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
+              <div class="fb-share-button" data-href="https://bloodbank.helixsolutions.ro/campanii" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
 
 
 

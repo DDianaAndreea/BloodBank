@@ -12,7 +12,7 @@ class Admin extends CI_Controller {
 		$this->load->model('eveniment_m');
 		$this->load->model('donatori_m');
 		$this->load->model('pacienti_m');
-
+		$this->load->helper('sendsms_helper');
 
 
 		if(!$this->session->userdata('logged_in') || !$this->session->userdata('admin_logged_in')){
@@ -112,6 +112,10 @@ class Admin extends CI_Controller {
 			$this->load->view('_err');
 			$this->load->view('layout/footer');
 		}
+	}
+
+	public function send_sms(){
+		sendsms('40760373781','test');
 	}
 
 }

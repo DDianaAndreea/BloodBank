@@ -49,6 +49,19 @@ class donatori_m extends CI_Model {
 		return $query->result();
 	}
 
+    function get_donator_respins($id){
+    $this->db->select('*');
+    $this->db->from('donatori');
+    $this->db->where('activ','3');
+    $this->db->where('ID',$id);
+
+
+    $query=$this->db->get();
+
+    return $query->result();
+  }
+
+
 	function get_info_donator($id_donator){
 		$this->db->select('*');
 		$this->db->from('donatori');
@@ -369,6 +382,35 @@ class donatori_m extends CI_Model {
 		return $query->result();
 	}
 
+     function search2($key)
+  {
+    $this->db->where('activ','1');
+    
+    $this->db->like('nume', $key);
+    $this->db->or_like('prenume', $key);
+    $this->db->or_like('grupa_sanguina', $key);
+
+    
+    
+
+    $query=$this->db->get('donatori');
+    return $query->result();
+  }
+
+     function search3($key)
+  {
+    $this->db->where('activ','3');
+    
+    $this->db->like('nume', $key);
+    $this->db->or_like('prenume', $key);
+    $this->db->or_like('grupa_sanguina', $key);
+
+    
+    
+
+    $query=$this->db->get('donatori');
+    return $query->result();
+  }
 
 
   public function get_donatori($limit, $start) {
@@ -380,19 +422,8 @@ class donatori_m extends CI_Model {
 
         return $query->result();
     }
-	// function fetch_data($query)
- // 	{
- //  		$this->db->select("*");
- //  		$this->db->from("donatori");
- //  		if($query != '')
- //  		{
- //   			$this->db->like('nume', $query);
- //   			$this->db->or_like('prenume', $query);
- //   			$this->db->or_like('adresa', $query);
- //   			$this->db->or_like('localitate', $query);
- //  		}
- //  		return $this->db->get();
- // 	}
+
+
 
 
 	}

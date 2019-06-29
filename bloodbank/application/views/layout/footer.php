@@ -59,7 +59,7 @@
           <div class="col-md-6 col-sm-12 text-md-right text-sm-left">
             <!-- <a href="" class="p-2"><span class="fa fa-facebook"></span></a> -->
 <!--              <iframe src="https://www.facebook.com/plugins/share_button.php?href=https://bloodbank.com/create-facebook-share-button-for-website-webpages/&layout=button&size=small&mobile_iframe=true&width=60&height=20&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>-->
-              <div class="fb-share-button" data-href="http://bloodbank.helixsolutions.ro/index" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
+              <div class="fb-share-button" data-href="https://bloodbank.helixsolutions.ro/index" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Distribuie</a></div>
 
           </div>
           
@@ -98,7 +98,7 @@
 
               <div class="form-group">
                 <label for="appointment_email" class="text-black">Email</label>
-                <input type="text" name="email" class="form-control" id="appointment_email" required>
+                <input type="email" name="email" class="form-control" id="appointment_email" required>
               </div>
               
 

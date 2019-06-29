@@ -266,22 +266,22 @@ class Donatori extends CI_Controller {
 
 		redirect('donatori/in_donors','refresh');
 	}
+
 	public function send_email_r_d(){
 		
 		$id=$this->uri->segment(3);
 		$data = array(
 			
-			'mesaj'=> $this->donatori_m->get_donatori_respinsi($id),
+			'mesaj'=> $this->donatori_m->get_donator_respins($id),
 			'unread_msg'=>$this->email_m->get_unread_msg(),
 
 		);
+
 		$this->load->view('layout/header',$data);
 		$this->load->view('layout/navbar');
 		$this->load->view('email/response',$data);
 		$this->load->view('layout/footer');
 	
-
-
 	}
 
 	public function skeyword()
@@ -310,59 +310,57 @@ class Donatori extends CI_Controller {
 	}
 
 
-	// function fetch()
- // 	{
- //  		$output = '';
- //  		$query = '';
- //  		$this->load->model('donatori_m');
- //  		if($this->input->post('query'))
- //  		{
- //   			$query = $this->input->post('query');
- //  		}
- //  		$data = $this->donatori_m->fetch_data($query);
- //  		$output .= '
- //  			<table class="table table-condensed">
- //                <thead>
- //                    <tr>
- //                        <th>Nume</th>
- //                        <th>Prenume</th>
- //                        <th>Grupa Sanguină</th>
- //                        <th>Rh</th>
- //                        <th>Data ultimei donări</th>
- //                        <th>Chestionarul donatorului</th>
- //                        <th>Carnetul donatorului</th>
- //                        <th>A donat Acum </th>
- //                     </tr>
- //                 </thead>
- //                 <tbody>
- //  		';
- //  		if($data->num_rows() > 0)
- //  		{
- //   			foreach($data->result() as $row)
- //   			{
- //    			$output .= '
- //      			<tr>
- //      			<td>'.$row->nume.'</td>
- //                <td>'.$row->prenume.'</td>
- //                <td>'.$row->grupa_sanguina.'</td>
- //                <td>'.$row->rh.'</td>
-                
+	public function skeyword2()
+	{
+		$key=$this ->input->get('don_key');
+		
+
+		$data = array(
+			
+			//'donatori'=> $this->donatori_m->get_donatori_activi(),
+			'd'=> $this->donatori_m->get_carnete_donatori(),
+			'donatori'=> $this->donatori_m->search2($key),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
+			
+		);
+
+		//echo "data: <pre>".print_r($data,true)."</pre>";
 
 
+		$this->load->view('layout/header',$data);
+		$this->load->view('layout/navbar');
+		$this->load->view('table/inactive-donors-table',$data);
+		$this->load->view('layout/footer');
+	
+	}
 
-                                                 
- //    			';
- //   			}
- //  		}
- //  		else
- //  		{
- //   			$output .= '<tr>
- //       		<td colspan="5">No Data Found</td>
- //     		 </tr>';
- //  		}
- //  		$output .= '</table>';
- //  		echo $output;
- // 	}
+
+	public function skeyword3()
+	{
+		$key=$this ->input->get('don_key');
+		
+
+		$data = array(
+			
+			//'donatori'=> $this->donatori_m->get_donatori_activi(),
+			'd'=> $this->donatori_m->get_carnete_donatori(),
+			'donatori'=> $this->donatori_m->search3($key),
+			'unread_msg'=>$this->email_m->get_unread_msg(),
+
+			
+		);
+
+		//echo "data: <pre>".print_r($data,true)."</pre>";
+
+
+		$this->load->view('layout/header',$data);
+		$this->load->view('layout/navbar');
+		$this->load->view('table/rejected-donors-table',$data);
+		$this->load->view('layout/footer');
+	
+	}
+
 
 
 
