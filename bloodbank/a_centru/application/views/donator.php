@@ -69,7 +69,8 @@
                                         <td><?php echo $donator->localitate?>
                                             <?php echo $donator->judet?></td>
                                         <td><?php echo $donator->adresa?></td>
-                                        <td><?php echo $donator->data_ultimei_donari?></td>
+
+                                        <td><?php echo date("d-m-y",strtotime($donator->data_ultimei_donari))?></td>
 
                                          
                                         <td><a class="fa fa-file btn" style="color:#8B0000" href="<?php echo base_url('donatori/chestionar/'.$donator->id)?>"></a> </td>

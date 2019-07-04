@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/owl.transitions.css')?>">
     <!-- meanmenu CSS
         ============================================ -->
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/meanmenu/meanmenu.min.css')?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/meanmenu/meanmenu.min.css')?>"> -->
     <!-- animate CSS
         ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/animate.css')?>">
@@ -38,10 +38,10 @@
     <link rel="stylesheet" href="<?php echo base_url('assets/css/normalize.css')?>">
     <!-- mCustomScrollbar CSS
         ============================================ -->
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/scrollbar/jquery.mCustomScrollbar.min.css')?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/scrollbar/jquery.mCustomScrollbar.min.css')?>"> -->
     <!-- jvectormap CSS
         ============================================ -->
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/jvectormap/jquery-jvectormap-2.0.3.css')?>">
+    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/jvectormap/jquery-jvectormap-2.0.3.css')?>"> -->
     <!-- notika icon CSS
         ============================================ -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/notika-custom-icon.css')?>">
