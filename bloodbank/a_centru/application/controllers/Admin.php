@@ -98,5 +98,6 @@ class Admin extends CI_Controller
 //	public function send_sms(){
 //		sendsms('40760373781','test');
 //	}
+
 }
 
