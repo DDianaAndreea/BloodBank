@@ -62,8 +62,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['dashboard'] = 'admin';
 
-$route['logout'] = 'auth/logout';
-$route['login'] = 'auth/login';
+$route['logout'] = 'auth/auth/logout';
+$route['login'] = 'auth/auth/login';
+$route['verify']='auth/auth/verify_admin_login';
 
 $route['stoc']='stoc/index';
 

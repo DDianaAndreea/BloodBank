@@ -26,7 +26,7 @@
         </div>
         <br>
 
-        <form action="<?php echo base_url('cerere_donare/cerere_donator') ?>" method="POST">
+        <form action="<?php echo base_url('cereri/cerere_donare/cerere_donator') ?>" method="POST">
         <div class="row" id="chestionar" >
           <div class="col-md-1"></div>
           <div class="  col-md-8 element-animate">

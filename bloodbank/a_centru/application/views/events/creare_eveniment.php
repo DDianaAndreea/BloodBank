@@ -31,7 +31,7 @@
 <div class="container">
 	<div class="normal-table-list mg-t-30">
         <div class="bsc-tbl-cds">
-           <form  action="<?php echo base_url('Evenimente/add_eveniment') ?>" method="POST">
+           <form  action="<?php echo base_url('evenimente_op/add_eveniment') ?>" method="POST">
             <table class="table table-condensed">
                 <thead>
                     <tr class="col-md-6">

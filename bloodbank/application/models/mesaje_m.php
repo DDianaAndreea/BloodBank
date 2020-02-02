@@ -9,10 +9,10 @@
  			'prenume' => $postData['prenume'],
  			'nume' => $postData['nume'],
  			'email' => $postData['email'],
- 			'mesaj' => $postData['mesaj']
+ 			'mesaj' => $postData['mesaj'],
+
  		);
  			$this->db->insert('mesaje',$data);
 	}
 
  }
- 

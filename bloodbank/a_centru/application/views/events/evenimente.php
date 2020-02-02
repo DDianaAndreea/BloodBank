@@ -68,7 +68,7 @@
                         </tbody>
                     </table>
                            
-                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete_ev/'.$ev->ID)?>">Șterge</a> 
+                            <a class="btn btn-danger"href="<?php echo base_url('evenimente_op/delete_ev/'.$ev->ID)?>">Șterge</a>
               
             	</div>
 

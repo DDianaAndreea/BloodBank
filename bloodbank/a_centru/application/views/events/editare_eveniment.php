@@ -31,7 +31,7 @@
 <div class="container">
 	<div class="normal-table-list mg-t-30">
         <div class="bsc-tbl-cds">
-           <form  action="<?php echo base_url('evenimente/edit_eveniment/'.$this->uri->segment(3)) ?>" method="POST">
+           <form  action="<?php echo base_url('evenimente_op/edit_eveniment/'.$this->uri->segment(3)) ?>" method="POST">
             <?php  foreach($evenimente as $eveniment):?>
             <table class="table table-condensed">
                 <thead>

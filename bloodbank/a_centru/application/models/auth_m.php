@@ -9,7 +9,7 @@ class auth_m extends CI_Model {
 	{
 		$this->db->select('*');
 		$this->db->where('email', $postData['email']);
-		$this->db->where('parola', md5($postData['parola']));
+		$this->db->where('parola', $postData['parola']);
 
 		$query = $this->db->get('personal');
 

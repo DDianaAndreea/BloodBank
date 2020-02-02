@@ -69,8 +69,8 @@
                         </tbody>
                     </table>
                     		<a class="btn btn-warning"href="<?php echo base_url('evenimente/editare_eveniment/'.$ev->ID)?>">Editează</a> 
-                            <a class="btn btn-danger"href="<?php echo base_url('evenimente/delete/'.$ev->ID)?>">Șterge</a>  
-                            <a class="btn btn-success"href="<?php echo base_url('evenimente/activ/'.$ev->ID)?>">Activează</a> 
+                            <a class="btn btn-danger"href="<?php echo base_url('evenimente_op/delete/'.$ev->ID)?>">Șterge</a>
+                            <a class="btn btn-success"href="<?php echo base_url('evenimente_op/activ/'.$ev->ID)?>">Activează</a>
 
               
             	</div>

@@ -75,7 +75,7 @@ class spitale_m extends CI_Model {
 
 	}
 	public function get_cantitate_stoc($grupa, $rh){
-		$this->db->select('cantitate',);
+		$this->db->select('cantitate');
 		$this->db->from('stoc');
 		$this->db->where('grupa',$grupa);
 		$this->db->where('rh',$rh);

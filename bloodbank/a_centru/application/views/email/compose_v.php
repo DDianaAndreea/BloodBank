@@ -53,7 +53,7 @@
                                 <h2>Mesaj nou pentru voluntarii centrului</h2>
                             </div>
                         </div>
-                        <form method="post" action="<?php echo base_url('email/sendEmail_v')?>"> 
+                        <form method="post" action="<?php echo base_url('email_op/sendEmail_v')?>">
                         <div class="cmp-int mg-t-20">
                             <div class="row">
                                 <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">

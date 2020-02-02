@@ -35,7 +35,7 @@
         <!-- Login -->
         <div class="nk-block toggled" >
             <div class="nk-form">
-                <form action="<?php echo base_url('/auth/verify_admin_login') ?>" method="POST">
+                <form action="<?php echo base_url('verify') ?>" method="POST">
                 <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon nk-ic-st-pro"><i class="fa fa-user-md "></i></span>

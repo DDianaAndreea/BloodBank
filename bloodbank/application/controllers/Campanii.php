@@ -2,84 +2,37 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Campanii extends CI_Controller {
-
 	public function __construct()
 	{
 		parent::__construct();
+		//se incarca modelele care se folosesc
 		$this->load->model('campanii_m');
 		$this->load->model('cookie_m');
 
+		// se incarca  libraria de cookie
 		$this->load->helper('cookie');
-		
-
-
-		
 	}
-
-	
 	public function index()
-	{	
+	{
+		// se primeste prin intermediul variabilei data un array de campanii disponibile din modelul campanii_m
 		$data = array(
+			//se apeleaza functia din model pentru a lua toate datele din tabelul campaniilor din baza de date
 			'campanii' =>$this->campanii_m->get_campanii()
 		);
-
-		$this->load->view('layout/header');
-		$this->load->view('campanii',$data);
-		$this->load->view('layout/footer');
+		$this->load->view('layout/header');//se incarca header-ul
+		$this->load->view('campanii',$data);//se incarca pagina de index cu set-ul de array
+		$this->load->view('layout/footer');// se incarca footer-ul
 	}
-
-
 	public function campanie()
 	{
-		$id=$this->uri->segment(3);
+		$id=$this->uri->segment(3);//variabila id retine id-ul campaniei selectate de utilizator
+		//in variabila data se retine array ul de date despre campania cu id ul specificat
 		$data = array(
+			//se apeleaza functia din model pentru a lua datele din baza de date
 			'campanii' =>$this->campanii_m->get_campanie($id)
 		);
-
-		
-		$this->load->view('layout/header2');
-		$this->load->view('campanii',$data);
-		$this->load->view('layout/footer');
-		
+		$this->load->view('layout/header2');//se incarca header-ul
+		$this->load->view('campanii',$data);//se incraca pagina de campanie cu datele primite de la model
+		$this->load->view('layout/footer');//se incarca footer-ul
 	}
-
-	
-	public function setCookie()
-	{	
-		$id= $this->uri->segment(3);
-		$data= $this->cookie_m->get_date($id);
-
-		//echo "Data: <pre>".print_r($data,true)."</pre>";
-		
-		$cookie = array(
-			'name' => 'cookie'.$id, 
-			'value' => $id,
-			'domain' => '',
-			'expire' => strtotime($data[0]->data) ,
-		);
-         
-		 //echo "Cookie val: <pre>".print_r($cookie,true)."</pre>";
-
-		$cookie_name= $cookie['name'];
-
-		// echo "Cookie name: <pre>".print_r($cookie_name,true)."</pre>";
-
-		$this->input->set_cookie($cookie);
-
-		$participanti_res = $this->cookie_m->get_participanti($id);
-		// echo "Date res: <pre>".print_r($participanti_res,true)."</pre>";
-
-
-		foreach($participanti_res as $participanti){
-			$this->cookie_m->participanti($participanti->ID, $participanti->participanti+1);
-		}
-
-
-		redirect('campanii','refresh');
-
-	}
-
-
-
-	
 }

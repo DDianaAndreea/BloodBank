@@ -249,8 +249,8 @@
         <div class="container">
             <div class="row" style="position: absolute;">
             
-                <a href="<?php echo base_url('donatori/delete_donator/'.$donator->ID) ?>" class="btn btn-danger">Nu se încadrează ca donator</a>
-                <a href="<?php echo base_url('donatori/in_asteptare/'.$donator->ID) ?>" class="btn btn-success">În așteptare până la verificarea analizelor</a>
+                <a href="<?php echo base_url('donatori_op/delete_donator/'.$donator->ID) ?>" class="btn btn-danger">Nu se încadrează ca donator</a>
+                <a href="<?php echo base_url('donatori_op/in_asteptare/'.$donator->ID) ?>" class="btn btn-success">În așteptare până la verificarea analizelor</a>
             
             </div>
         </div>
@@ -268,7 +268,7 @@
           <h4 class="modal-title">Date personale</h4>
         </div>
         <div class="modal-body">
-          <form action="<?php echo base_url('donatori/date_personale/').$donator->ID?>" method="post">
+          <form action="<?php echo base_url('donatori_op/date_personale/').$donator->ID?>" method="post">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">

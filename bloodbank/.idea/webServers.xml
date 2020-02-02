@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="54faf10b-2b73-4497-a8f1-557bfcd0bc2f" name="helixsolutions" url="http://helixsolutions.ro">
+        <fileTransfer host="helixsolutions.ro" port="21" rootFolder="/bloodbank.helixsolutions.ro">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

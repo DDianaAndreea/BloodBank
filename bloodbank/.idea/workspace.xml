@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad7253d3-f0cc-4236-8084-f75bd01255b8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="bloodbank" />
+  </component>
+  <component name="ProjectId" id="1UnnL3iTffyvmyLz3x3CVJZHRM2" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\bloodbank\a_centru\application\controllers\auth" />
+      <recent name="C:\xampp\htdocs\bloodbank\application\controllers\Cereri" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad7253d3-f0cc-4236-8084-f75bd01255b8" name="Default Changelist" comment="" />
+      <created>1561643642224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561643642224</updated>
+      <workItem from="1561643646150" duration="5244000" />
+      <workItem from="1561656759273" duration="1020000" />
+      <workItem from="1561666372311" duration="112000" />
+      <workItem from="1561725100593" duration="6000" />
+      <workItem from="1561725716644" duration="872000" />
+      <workItem from="1561731911141" duration="5726000" />
+      <workItem from="1561739593830" duration="1087000" />
+      <workItem from="1561741455342" duration="897000" />
+      <workItem from="1561744824528" duration="1812000" />
+      <workItem from="1561749650134" duration="453000" />
+      <workItem from="1561750277451" duration="1483000" />
+      <workItem from="1561791296871" duration="169000" />
+      <workItem from="1561791685412" duration="1298000" />
+      <workItem from="1561793127581" duration="1885000" />
+      <workItem from="1561800452332" duration="4130000" />
+      <workItem from="1561811531299" duration="5000" />
+      <workItem from="1561914749952" duration="413000" />
+      <workItem from="1561924127912" duration="410000" />
+      <workItem from="1564824254199" duration="15000" />
+      <workItem from="1576001178964" duration="432000" />
+      <workItem from="1576001658330" duration="1856000" />
+      <workItem from="1576003583681" duration="960000" />
+      <workItem from="1576004633561" duration="1219000" />
+      <workItem from="1576006288105" duration="627000" />
+      <workItem from="1576093908041" duration="10000" />
+      <workItem from="1576182175888" duration="967000" />
+      <workItem from="1576184355572" duration="206000" />
+      <workItem from="1576673875885" duration="346000" />
+      <workItem from="1576687663200" duration="914000" />
+      <workItem from="1577205503730" duration="816000" />
+      <workItem from="1580151228846" duration="101000" />
+      <workItem from="1580151527916" duration="1293000" />
+      <workItem from="1580152972655" duration="1901000" />
+      <workItem from="1580155264823" duration="1741000" />
+      <workItem from="1580157211340" duration="1774000" />
+      <workItem from="1580159067870" duration="1164000" />
+      <workItem from="1580203704844" duration="1756000" />
+      <workItem from="1580205528799" duration="1773000" />
+      <workItem from="1580207373430" duration="1254000" />
+      <workItem from="1580208800018" duration="21000" />
+      <workItem from="1580282461007" duration="1529000" />
+      <workItem from="1580284083580" duration="149000" />
+      <workItem from="1580286563443" duration="345000" />
+      <workItem from="1580290366322" duration="537000" />
+      <workItem from="1580296685639" duration="1695000" />
+      <workItem from="1580300918067" duration="1734000" />
+      <workItem from="1580303815606" duration="1760000" />
+      <workItem from="1580305630188" duration="433000" />
+      <workItem from="1580396963122" duration="17000" />
+      <workItem from="1580409989165" duration="233000" />
+      <workItem from="1580578538502" duration="131000" />
+      <workItem from="1580623855832" duration="1162000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

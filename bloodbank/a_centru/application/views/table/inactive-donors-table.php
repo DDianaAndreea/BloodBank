@@ -11,7 +11,7 @@
 									</div>
 									<div class="breadcomb-ctn">
 										<h2>Donatori în așteptare</h2>
-										<form method="get" action="<?php echo base_url('donatori/skeyword2')?>">
+										<form method="get" action="<?php echo base_url('donatori_search/skeyword2')?>">
                                             <input type="text" style="width:490px; " name="don_key" id="don_search_box"  class="form-control input-lg typeahead" placeholder="caută donator după Nume, Prenume sau Grupa Sanguină" />
                                         </form>
 									</div>
@@ -53,8 +53,8 @@
                                         
                                         <td><a class="fa fa-file btn" style="color:#8B0000" href="<?php echo base_url('donatori/chestionar/'.$donator->ID)?>"></a> </td>
                                         <td><a class="fa fa-id-card btn" style="color:#8B0000 " href="<?php echo base_url('donatori/carnetul_donatorului/'.$donator->ID)?>"></a> </td>
-                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('donatori/activare/'.$donator->ID)?>"> aprobă donarea</a>
-                                            <a class="fa fa-times-circle btn" style="color:#8B0000" href="<?php echo base_url('donatori/donator_respins/'.$donator->ID)?>"> nu aprobă donarea</a></td>
+                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('donatori_op/activare/'.$donator->ID)?>"> aprobă donarea</a>
+                                            <a class="fa fa-times-circle btn" style="color:#8B0000" href="<?php echo base_url('donatori_op/donator_respins/'.$donator->ID)?>"> nu aprobă donarea</a></td>
                                     </tr>
                                     <?php endforeach?>
                                     

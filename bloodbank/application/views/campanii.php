@@ -43,7 +43,7 @@
 
                       <?php if ( !isset($_COOKIE[$cookieCampanie]) ): ?>
                           <div id="<?php echo $campanie->ID?>">
-                              <a href="<?php echo base_url('campanii/setCookie/'.$campanie->ID)?>"  class="btn btn-danger " style="font-color:white;">Vreau să particip</a>
+                              <a href="<?php echo base_url('campanii_cookie/setCookie/'.$campanie->ID)?>"  class="btn btn-danger " style="font-color:white;">Vreau să particip</a>
                           </div>
                       <?php else:?>
 
@@ -73,4 +73,3 @@
     </section>
 
    
-  

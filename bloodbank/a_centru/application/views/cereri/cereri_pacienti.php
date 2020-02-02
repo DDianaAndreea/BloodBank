@@ -60,8 +60,8 @@
                                         </tr>
                                     </tbody>
                             </table>
-                            <a class="btn btn-success" href="<?php echo base_url('pacienti/make_active/'.$pacient->ID) ?>">Acceptă</a> 
-                            <a class="btn btn-danger"href="<?php echo base_url('pacienti/delete/'.$pacient->ID)?>">Șterge</a> 
+                            <a class="btn btn-success" href="<?php echo base_url('pacienti_op/make_active/'.$pacient->ID) ?>">Acceptă</a>
+                            <a class="btn btn-danger"href="<?php echo base_url('pacienti_op/delete/'.$pacient->ID)?>">Șterge</a>
               
                         </div>
 
@@ -77,4 +77,3 @@
             
 
         </div>
-  

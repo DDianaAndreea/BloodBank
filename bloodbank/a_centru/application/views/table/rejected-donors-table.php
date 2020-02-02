@@ -11,7 +11,7 @@
 									</div>
 									<div class="breadcomb-ctn">
 										<h2>Donatori respinși</h2>
-                                        <form method="get" action="<?php echo base_url('donatori/skeyword3')?>">
+                                        <form method="get" action="<?php echo base_url('donatori_search/skeyword3')?>">
                                             <input type="text" style="width:490px; " name="don_key" id="don_search_box"  class="form-control input-lg typeahead" placeholder="caută donator după Nume, Prenume sau Grupa Sanguină" />
                                         </form>
 

@@ -13,7 +13,7 @@
 									<div class="breadcomb-ctn">
 										<h2><?php echo  $pacient->nume?> <?php echo $pacient->prenume?></h2>
 
-										<h5><?php echo $pacient->data_cererii?></h5s>
+										<h5><?php echo $pacient->data_cererii?></h5>
 									<?php endforeach?>
 
 										

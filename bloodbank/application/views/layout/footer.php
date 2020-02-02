@@ -39,10 +39,10 @@
             <h3>Locatie &amp; Contact</h3>
             <p class="mb-5">Aleea Viorelelor, Slatina, Olt, România</p>
 
-            <h4 class="text-uppercase mb-3 h6 text-white">Email</h5>
+            <h4 class="text-uppercase mb-3 h6 text-white">Email</h4>
             <p class="mb-5"><a href="mailto:info@yourdomain.com">centrulBloodBank@gmail.com</a></p>
             
-            <h4 class="text-uppercase mb-3 h6 text-white">Telefon</h5>
+            <h4 class="text-uppercase mb-3 h6 text-white">Telefon</h4>
             <p>0349000000</p>
             <p>0760373781</p>
 

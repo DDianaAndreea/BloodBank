@@ -50,7 +50,7 @@
                                         <td><?php echo $pacient->grupa_sanguina?></td>
                                         <td><?php echo $pacient->data_cererii?></td>
                                         <td><a class="fa fa-file btn" style="color:#8B0000" href="<?php echo base_url('pacienti/view_pacient/'.$pacient->ID )?>"></a></td>
-                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('pacienti/delete_pacient/'.$pacient->ID )?>"></a></td>
+                                        <td><a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('pacienti_op/delete_pacient/'.$pacient->ID )?>"></a></td>
                                     </tr>
 
                                     <?php endforeach?>

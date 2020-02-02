@@ -49,7 +49,7 @@
                                                 <?php if ($donator->id== $donator_info_a->ID): ?>
                                                     <?php echo $donator_info_a->nume?>
                                                     <?php echo $donator_info_a->prenume?> -ACTIV
-                                                    <a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('donatori/donare_azi_home/'.$donator->id.'/'.$donator_info_a->grupa_sanguina.'/'.$donator_info_a->rh) ?>"> </a>
+                                                    <a class="fa fa-check-circle btn" style="color:green" href="<?php echo base_url('donatori_op/donare_azi_home/'.$donator->id.'/'.$donator_info_a->grupa_sanguina.'/'.$donator_info_a->rh) ?>"> </a>
                                             
                                                 <?php endif?>
                                         <?php endforeach?> 

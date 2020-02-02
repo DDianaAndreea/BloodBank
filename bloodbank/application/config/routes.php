@@ -76,11 +76,11 @@ $route['cum'] = "index/cum";
 $route['unde'] = "index/unde";
 $route['campanii'] = "campanii/index";
 $route['contact'] = "mesaje/contact";
-$route['cerere_donare'] = "cerere_donare/index";
-$route['cerere_d'] = "cerere_donare/cerere_d";
-$route['chestionar_d'] = "cerere_donare/chestionar_d";
-$route['cerere_pacient'] = "cerere_primire/index";
-$route['cerere_spital'] = "cerere_primire/index_spital";
+$route['cerere_donare'] = "cereri/cerere_donare/index";
+$route['cerere_d'] = "cereri/cerere_donare/cerere_d";
+$route['chestionar_d'] = "cereri/cerere_donare/chestionar_d";
+$route['cerere_pacient'] = "cereri/cerere_primire/index";
+$route['cerere_spital'] = "cereri/cerere_primire/index_spital";
 $route['voluntar'] = "voluntari/index";
 $route['cazuri'] = "cazuri/index";
 

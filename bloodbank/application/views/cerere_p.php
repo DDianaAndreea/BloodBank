@@ -17,7 +17,7 @@
         <div class="row"  >
           <div class="col-md-1"></div>
           <div class="  col-md-8 element-animate">
-            <form  action="<?php echo base_url('cerere_primire/cerere_pacient') ?>" method="POST">
+            <form  action="<?php echo base_url('cereri/cerere_primire/cerere_pacient') ?>" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
